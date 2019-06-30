@@ -1,0 +1,48 @@
+/**
+ * Styles for the navigation block.
+ */
+.navigation {
+    // Selector styles
+    // TODO: add code
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        font-family: 'Roboto';
+        font-size: 16px;
+        &:hover{
+            color: #ea0c0c;
+            font-weight: 900;
+        }
+    }
+    .navigation_wrapp{
+        display: flex;
+    }
+    .nav_menu{
+        display: flex;
+    }
+    .nav_icons{
+        display: flex;
+    }
+    .fa-heart{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // Bem modifiers
+    // TODO: add code
+}

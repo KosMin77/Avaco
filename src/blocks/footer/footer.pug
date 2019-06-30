@@ -1,0 +1,33 @@
+//-
+    name: footer
+    description: Markup for the footer block
+    arguments:
+        - {object} props - block properties
+
+mixin footer(data = {})
+    .footer&attributes(attributes)
+        .container
+            .row
+                .footer_wrapp
+                    .col-3
+                        h3.footer_delivery= data.delivery
+                        p.footer_descr= data.descr
+                    .col-3
+                        h3.footer_prices= data.prices
+                        p.footer_descr= data.descr
+                    .col-3
+                        h3.footer_assortment= data.assortment
+                        p.footer_descr= data.descr
+                    .col-3
+                        h3.footer_discounts= data.discounts
+                        p.footer_descr= data.descr
+            .row
+                .footer_contacts
+                    .col-4
+                    .col-4
+                        h1.title= data.title
+                        p.subtitle= data.subtitle
+                        p.call= data.call
+                        input(type="search" placeholder="Your mail")
+                        button.btn.btn-primary(type='submit') Subscribe
+                    .col-4

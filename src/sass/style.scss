@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+
+// TODO: include third-party styles
+
+@import "../blocks/common/page/page.scss";
+@import "../blocks/navigation/navigation.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/choice/choice.scss";
+@import "../blocks/offer/offer.scss";
+@import "../blocks/publicity/publicity.scss";
+@import "../blocks/footer/footer.scss";
+@import "../blocks/copyrights/copyrights.scss"
+
+// TODO: include other block styles

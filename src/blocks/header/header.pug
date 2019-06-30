@@ -1,0 +1,18 @@
+//-
+    name: header
+    description: Markup for the header block
+    arguments:
+        - {object} props - block properties
+
+mixin header(data = {})
+    .header&attributes(attributes)
+        .container
+            .row
+                .col-12.header_main
+                    .col-6
+                        p.subtitle= data.subtitle
+                        h1.title= data.title
+                        p.descr= data.descr
+                        button.btn.btn-shop(type='submit') Shop Now!
+                        button.btn.btn-phone(type='submit')= data.phone
+                    .col-6

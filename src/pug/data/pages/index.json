@@ -1,0 +1,50 @@
+{
+    "navigation": {
+        "title": "./img/logo.png",
+        "menu": [
+            "Home",
+            "Woman",
+            "Man",
+            "Collection",
+            "Sale",
+            "Contacts"
+        ],
+        "search": "icon_search",
+        "icons":[
+            
+        ]
+    },
+    "header": {
+        "title": "Avangarde there true by first Galant",
+        "subtitle": "Clarity lines geometric shapes!",
+        "descr": "Galanteya in the season autumn-winter 2018-2019. So it's time to remember the lessons of geometry, because that...",
+        "phone": "800.366.40.72",
+        "forHer": "forHer",
+        "forHim": "forHim"
+    },
+    "choice": {
+        "she": "for Her",
+        "he": "for Him"
+    },
+    "offer": {
+        "title": "Special discount offer",
+        "descr": "Hot price for outgoing season bags $120.00"
+    },
+    "publicity": {
+        "title": "Do not miss the offer of the season from GALANT!",
+        "subtitle": "GALANTEYA in the season autumn-winter 2018-2019. So it's time to remember the lessons of geometry, because that on the shelves of "
+    },
+    "footer": {
+        "title": "Avako",
+        "subtitle": "For all questions please contact us by mail for all questions for all questions please contact there this all us by mail for all questions please contact us by mail please contact us by mail",
+        "call": "Call 24/7: 800.123.45.67",
+        "delivery": "Fast Delifery",
+        "prices": "Best Prices",
+        "assortment": "Large Assortment",
+        "discounts": "Favorable Discounts",
+        "descr": "Hot offer click and go to the link"
+    },
+    "copyrights": {
+        "title": "Copyright © 2019. Wordpress Avako. All rights reserved"
+    }
+}

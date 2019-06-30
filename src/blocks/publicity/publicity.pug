@@ -1,0 +1,17 @@
+//-
+    name: publicity
+    description: Markup for the publicity block
+    arguments:
+        - {object} props - block properties
+
+mixin publicity(data = {})
+    .publicity&attributes(attributes)
+        .container
+            .pxublicity_wrapp
+                .row
+                    .col-6
+                        h1.title= data.title
+                        p.subtitle= data.subtitle
+                        button.btn.btn-primary(type='submit') Shop Now!
+
+                    .col-6

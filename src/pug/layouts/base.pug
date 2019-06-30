@@ -1,0 +1,32 @@
+include ../../blocks/common/icon/icon.pug
+include ../../blocks/header/header.pug
+include ../../blocks/choice/choice.pug
+include ../../blocks/offer/offer.pug
+include ../../blocks/publicity/publicity.pug
+include ../../blocks/footer/footer.pug
+include ../../blocks/navigation/navigation.pug
+include ../../blocks/copyrights/copyrights.pug
+//- TODO: include common block templates
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+       
+
+
+        if data.pageTitle
+            title #{data.pageTitle}
+        else
+            title #{data.siteTitle}
+
+        link(rel="stylesheet", href="css/style.css")
+    body.page
+        block page
+
+        block scripts
+            script(src="js/vendor.js")
+            script(src="js/main.js")

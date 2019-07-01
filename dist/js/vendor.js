@@ -10839,7 +10839,7 @@ svg4everybody__WEBPACK_IMPORTED_MODULE_1___default()();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\GIT\Examination\Avako\src\js\vendor.js */"./src/js/vendor.js");
+module.exports = __webpack_require__(/*! E:\GIT\Examination\FinalProject\src\js\vendor.js */"./src/js/vendor.js");
 
 
 /***/ })

@@ -74,6 +74,10 @@ img {
   max-width: 100%;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 /**
  * Styles for the page block
  */

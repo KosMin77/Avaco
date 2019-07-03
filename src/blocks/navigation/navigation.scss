@@ -1,35 +1,49 @@
 /**
  * Styles for the navigation block.
  */
-.navigation {
+ .navigation {
     // Selector styles
     // TODO: add code
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+
     a{
         text-decoration: none;
         color: black;
         font-weight: 400;
         font-family: 'Roboto';
-        font-size: 16px;
+        font-size: 18px;
+        margin-right: 25px;
         &:hover{
             color: #ea0c0c;
             font-weight: 900;
+            transition: .3s;
         }
     }
-    .navigation_wrapp{
+    .nav_logo{
         display: flex;
+        justify-content: center;
+        margin-top: 10px;
     }
+
     .nav_menu{
         display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        margin-left: 35px;
     }
-    .nav_icons{
+    .nav_list{
         display: flex;
     }
-    .fa-heart{
-        margin-left: 10px;
-        margin-right: 10px;
+    .nav_links{
+        color: black;
+        font-weight: 400;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 67px;
     }
-    
-
 
     // @media queries
     // TODO: add code

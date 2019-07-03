@@ -5,11 +5,15 @@
     // Selector styles
     // TODO: add code
     color: #201c37;
-	font-size: 14px;
+	font-size: 16px;
     font-weight: 400;
     font-family: 'Archivo';
-    text-align: center;
     padding: 10px 0;
+
+    .copy{
+        display: flex;
+        justify-content: center;
+    }
 
     // @media queries
     // TODO: add code

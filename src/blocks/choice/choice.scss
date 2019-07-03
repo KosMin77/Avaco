@@ -4,14 +4,18 @@
 .choice {
     // Selector styles
     // TODO: add code
+    margin-top: 30px;
 
-    .she{
+    .left_choice{
         background-image: url(../../img/forHer.jpg);
+        max-width: 100%;
+        height: 600px;
     }
-    .he{
-        background-image: url(../../img/forHim.jpg)
+    .right_choice{
+        background-image: url(../../img/forHim.jpg);
+        max-width: 100%;
+        height: 600px;
     }
-
     // @media queries
     // TODO: add code
 

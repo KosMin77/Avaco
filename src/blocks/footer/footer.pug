@@ -9,25 +9,39 @@ mixin footer(data = {})
         .container
             .row
                 .footer_wrapp
-                    .col-3
+                    .col-3.footer_block_wrapp
                         h3.footer_delivery= data.delivery
                         p.footer_descr= data.descr
-                    .col-3
+                    .col-3.footer_block_wrapp
                         h3.footer_prices= data.prices
                         p.footer_descr= data.descr
-                    .col-3
+                    .col-3.footer_block_wrapp
                         h3.footer_assortment= data.assortment
                         p.footer_descr= data.descr
-                    .col-3
+                    .col-3.footer_block_wrapp
                         h3.footer_discounts= data.discounts
                         p.footer_descr= data.descr
+        .footer_contacts
             .row
-                .footer_contacts
-                    .col-4
-                    .col-4
-                        h1.title= data.title
-                        p.subtitle= data.subtitle
-                        p.call= data.call
-                        input(type="search" placeholder="Your mail")
-                        button.btn.btn-primary(type='submit') Subscribe
-                    .col-4
+                .col-2
+                .col-8
+                    h1.title= data.title
+                    p.subtitle!= data.subtitle
+                    .footer_call
+                        a(href="tel:+800.123.45.67").call= data.call
+                    input.email(type="search" placeholder="Your mail")
+                    button.btn.btn_subscribe(type='submit') Subscribe
+                    .footer_social
+                        a(href="#")
+                            i(class="fab fa-facebook-f")
+                        a(href="#")
+                            i(class="fab fa-instagram")
+                        a(href="#")
+                            i(class="fas fa-rss")
+                        a(href="#")
+                            i(class="fab fa-linkedin-in")
+                        a(href="#")
+                            i(class="fab fa-youtube")
+                        a(href="#")
+                            i(class="fab fa-twitter")
+                .col-2

@@ -9,7 +9,6 @@
             "Sale",
             "Contacts"
         ],
-        "search": "icon_search",
         "icons":[
             
         ]
@@ -36,7 +35,7 @@
     },
     "footer": {
         "title": "Avako",
-        "subtitle": "For all questions please contact us by mail for all questions for all questions please contact there this all us by mail for all questions please contact us by mail please contact us by mail",
+        "subtitle": "For all questions please contact us by mail for all questions for all questions<br>please contact there this all us by mail for all questions ",
         "call": "Call 24/7: 800.123.45.67",
         "delivery": "Fast Delifery",
         "prices": "Best Prices",

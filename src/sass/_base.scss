@@ -75,7 +75,18 @@ img {
     max-width: 100%;
 }
 
-// general button settings //
-.btn {
+.btn{
     cursor: pointer;
+}
+
+.btn:hover{
+    /* opacity: .6;
+    transform: scale(0.9,0.9); */
+    box-shadow: 7px 7px 14px -6px rgba(0,0,0,0.54);
+    transition: .3s;
+}
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 7px 7px 14px -6px rgba(0,0,0,0.54);
+    transition: .3s;
 }

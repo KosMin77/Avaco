@@ -1,5 +1,5 @@
 /**
- * @file Implementation of the offer block
+ * @file Implementation of the navigation block
  */
 
 // -------------------------- BEGIN MODULE VARIABLES --------------------------
@@ -24,13 +24,17 @@
 
 // TODO: add code here
 
-$(document).ready(function(){
-  
-    $('.offer_slider').slick({
-       infinite: true,
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       dots: true
+ // ** creation active menu through html & boy animation ** //
+$(document).ready(function() {
+
+   $("a").click(function() {
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top-85
+      }, {
+         duration: 700,
+         easing: "swing"
+      });
+      return false;
    });
  
  });
@@ -40,7 +44,7 @@ $(document).ready(function(){
 // --------------------------- BEGIN PUBLIC METHODS ---------------------------
 
 /**
- * Initialize the offer block.
+ * Initialize the navigation block.
  * @return true if the block is present on the page, false otherwise
  */
 function initBlock() {

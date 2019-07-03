@@ -7,11 +7,9 @@
 mixin publicity(data = {})
     .publicity&attributes(attributes)
         .container
-            .publicity_wrapp
-                .row
-                    .col-6
-                        h1.title= data.title
-                        p.subtitle= data.subtitle
-                        button.btn.btn-primary(type='submit') Shop Now!
-
-                    .col-6
+            .row
+                .col-6
+                    h1.title= data.title
+                    p.subtitle= data.subtitle
+                    button.btn.btn-shop(type='submit') Shop Now!
+                .col-6

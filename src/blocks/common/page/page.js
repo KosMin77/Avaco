@@ -65,6 +65,7 @@ function throttleWindowScroll() {
     }, SCROLL_INTERVAL);
 }
 
+
 // ---------------------------- END EVENT HANDLERS ----------------------------
 
 // --------------------------- BEGIN PUBLIC METHODS ---------------------------

@@ -1,6 +1,7 @@
 node_modules/
 package-lock.json
 psd/
+docs/
 
 # ignore auto-generated files
 src/blocks/icon/icon.scss

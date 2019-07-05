@@ -24,16 +24,6 @@
 
 // TODO: add code here
 
-$(document).ready(function(){
-  
-    $('.offer_slider').slick({
-       infinite: true,
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       dots: true
-   });
- 
- });
 
 // ---------------------------- END EVENT HANDLERS ----------------------------
 
@@ -45,6 +35,22 @@ $(document).ready(function(){
  */
 function initBlock() {
     // TODO: add code here
+    // $('.slider-for').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: false,
+    //     fade: true,
+    //     asNavFor: '.offer_slider'
+    //   });
+      $('.offer_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: false
+      });
     return true;
 }
 

@@ -12,10 +12,11 @@
     a{
         text-decoration: none;
         color: black;
-        font-weight: 400;
+        font-weight: 600;
         font-family: 'Roboto';
         font-size: 18px;
         margin-right: 25px;
+        line-height: 67px;
         &:hover{
             color: #ea0c0c;
             font-weight: 900;
@@ -25,24 +26,33 @@
     .nav_logo{
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 12px;
     }
 
     .nav_menu{
         display: flex;
         justify-content: center;
-        margin-top: 8px;
-        margin-left: 35px;
+        margin-top: 10px;
     }
     .nav_list{
         display: flex;
     }
-    .nav_links{
-        color: black;
-        font-weight: 400;
-        font-family: 'Roboto';
-        font-size: 16px;
-        line-height: 67px;
+
+    .nav_icons{
+        display: flex;
+        margin-top: 28px;
+    }
+
+    .btn-nav{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-right: 15px;
+    }
+    .fas{
+        background-color: none;
+        font-size: 18px;
+        width: 10px;
     }
 
     // @media queries

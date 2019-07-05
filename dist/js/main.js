@@ -96,9 +96,11 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_utils_lazy_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js/utils/lazy-loader */ "./src/js/utils/lazy-loader.js");
+/* harmony import */ var _offer_offer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../offer/offer */ "./src/blocks/offer/offer.js");
 /**
  * @file Implementation of the page block
  */
+
  // TODO: import other blocks
 // -------------------------- BEGIN MODULE VARIABLES --------------------------
 
@@ -170,10 +172,69 @@ function initBlock() {
     scroll: throttleWindowScroll
   });
   _js_utils_lazy_loader__WEBPACK_IMPORTED_MODULE_0__["default"].init(); // TODO: initialize other blocks
-  // Process the initial window size and scroll position
+
+  _offer_offer__WEBPACK_IMPORTED_MODULE_1__["default"].initBlock(); // Process the initial window size and scroll position
 
   handleWindowResize();
   handleWindowScroll();
+  return true;
+} // ---------------------------- END PUBLIC METHODS ----------------------------
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  initBlock: initBlock
+});
+
+/***/ }),
+
+/***/ "./src/blocks/offer/offer.js":
+/*!***********************************!*\
+  !*** ./src/blocks/offer/offer.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * @file Implementation of the offer block
+ */
+// -------------------------- BEGIN MODULE VARIABLES --------------------------
+// TODO: add code here
+// --------------------------- END MODULE VARIABLES ---------------------------
+// -------------------------- BEGIN UTILITY FUNCTIONS -------------------------
+// TODO: add code here
+// --------------------------- END UTILITY FUNCTIONS --------------------------
+// ----------------------------- BEGIN DOM METHODS ----------------------------
+// TODO: add code here
+// ------------------------------ END DOM METHODS -----------------------------
+// --------------------------- BEGIN EVENT HANDLERS ---------------------------
+// TODO: add code here
+// ---------------------------- END EVENT HANDLERS ----------------------------
+// --------------------------- BEGIN PUBLIC METHODS ---------------------------
+
+/**
+ * Initialize the offer block.
+ * @return true if the block is present on the page, false otherwise
+ */
+function initBlock() {
+  // TODO: add code here
+  // $('.slider-for').slick({
+  //     slidesToShow: 1,
+  //     slidesToScroll: 1,
+  //     arrows: false,
+  //     fade: true,
+  //     asNavFor: '.offer_slider'
+  //   });
+  $('.offer_slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: false
+  });
   return true;
 } // ---------------------------- END PUBLIC METHODS ----------------------------
 

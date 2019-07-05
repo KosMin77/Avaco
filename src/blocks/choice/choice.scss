@@ -6,16 +6,6 @@
     // TODO: add code
     margin-top: 30px;
 
-    .left_choice{
-        background-image: url(../../img/forHer.jpg);
-        max-width: 100%;
-        height: 600px;
-    }
-    .right_choice{
-        background-image: url(../../img/forHim.jpg);
-        max-width: 100%;
-        height: 600px;
-    }
     // @media queries
     // TODO: add code
 
@@ -27,6 +17,31 @@
 
     // BEM elements
     // TODO: add code
+    &__panel {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__panel:hover > &__image {
+        transform: scale(1.3);
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        transition: 10s linear;
+    }
+
+    &__link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        padding-left: $gutter*2;
+    }
 
     // Bem modifiers
     // TODO: add code

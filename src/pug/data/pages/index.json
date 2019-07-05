@@ -10,7 +10,9 @@
             "Contacts"
         ],
         "icons":[
-            
+            "search",
+            "heart",
+            "shopping-cart"
         ]
     },
     "header": {
@@ -27,7 +29,12 @@
     },
     "offer": {
         "title": "Special discount offer",
-        "descr": "Hot price for outgoing season bags $120.00"
+        "descr": "Hot price for outgoing season bags $120.00",
+        "product":[
+            "../../img/blackBag.jpg",
+            "../../img/redBag.jpg",
+            "../../img/pinkBag.jpg"
+        ]
     },
     "publicity": {
         "title": "Do not miss the offer of the season from GALANT!",

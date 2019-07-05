@@ -7,23 +7,28 @@
 mixin offer(data = {})
     .offer&attributes(attributes)
         .container
+            .h3.offer_title= data.title
             .row
                 .offer_slider
                     .offer_slides
-                        img(src="../../img/blackBag.jpg", alt="alt")
-                        p.descr= data.descr
-                    .offer_slides
-                        img(src="../../img/redBag.jpg", alt="alt")
-                        p.descr= data.descr
-                    .offer_slides
-                        img(src="../../img/pinkBag.jpg", alt="alt")
-                        p.descr= data.descr
-                    .offer_slides
-                        img(src="../../img/blackBag.jpg", alt="alt")
-                        p.descr= data.descr
-                    .offer_slides
-                        img(src="../../img/redBag.jpg", alt="alt")
-                        p.descr= data.descr
-                    .offer_slides
-                        img(src="../../img/pinkBag.jpg", alt="alt")
-                        p.descr= data.descr
+                        each item in data.product
+                                    img(src=${item}, alt="alt")
+                                    p.descr= data.descr
+                                        
+                    //-     img(src="../../img/blackBag.jpg", alt="alt")
+                    //-     p.descr= data.descr
+                    //- .offer_slides
+                    //-     img(src="../../img/redBag.jpg", alt="alt")
+                    //-     p.descr= data.descr
+                    //- .offer_slides
+                    //-     img(src="../../img/pinkBag.jpg", alt="alt")
+                    //-     p.descr= data.descr
+                    //- .offer_slides
+                    //-     img(src="../../img/blackBag.jpg", alt="alt")
+                    //-     p.descr= data.descr
+                    //- .offer_slides
+                    //-     img(src="../../img/redBag.jpg", alt="alt")
+                    //-     p.descr= data.descr
+                    //- .offer_slides
+                    //-     img(src="../../img/pinkBag.jpg", alt="alt")
+                    //-     p.descr= data.descr

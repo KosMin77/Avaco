@@ -7551,6 +7551,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /**
+ * Styles for the product block.
+ */
+/**
  * Styles for the choice block.
  */
 .choice {
@@ -7601,22 +7604,22 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 36px;
   font-weight: 400;
   line-height: 64px;
+  margin: 20px 0;
 }
 
 .offer .offer_slider {
+  display: inline;
   overflow: hidden;
-  width: 100%;
 }
 
 .offer .offer_slides {
-  background-color: #fff;
-  max-width: 352px;
   height: 356px;
   margin-left: 10px;
 }
 
 .offer .descr {
   width: 250px;
+  margin-top: 15px;
 }
 
 .offer .slick-dots {
@@ -7674,6 +7677,7 @@ a.text-dark:hover, a.text-dark:focus {
  */
 .footer .footer_contacts {
   background-image: url(../../img/mail.jpg);
+  background-position: center;
   max-width: 100%;
   height: 70vh;
   text-align: center;

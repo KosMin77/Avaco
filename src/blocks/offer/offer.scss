@@ -7,6 +7,18 @@
     margin-top: 40px;
     margin-bottom: 40px;
     
+    // @media queries
+    // TODO: add code
+    
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+    
+    // Nested selectors
+    // TODO: add code
+    
+    // BEM elements
+    // TODO: add code
+    
     .offer_title{
         text-align: center;
         color: #201c37;
@@ -14,21 +26,22 @@
         font-size: 36px;
         font-weight: 400;
         line-height: 64px;
+        margin: 20px 0;
     }
+    
     .offer_slider{
+        display: inline;
         overflow: hidden;
-        width: 100%;
-
     }
+
     .offer_slides{
-        background-color: #fff;
-        max-width: 352px;
         height: 356px;
         margin-left: 10px;
     }
 
     .descr{
         width: 250px;
+        margin-top: 15px;
     }
 
     .slick-dots{
@@ -36,18 +49,6 @@
         justify-content: center;
 
     }
-    // @media queries
-    // TODO: add code
-
-    // Pseudo-classes and pseudo-elements
-    // TODO: add code
-
-    // Nested selectors
-    // TODO: add code
-
-    // BEM elements
-    // TODO: add code
-
     // Bem modifiers
     // TODO: add code
 }

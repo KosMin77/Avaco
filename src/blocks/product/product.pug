@@ -1,0 +1,43 @@
+//-
+    name: product
+    description: Markup for the product block
+    arguments:
+        - {object} props - block properties
+
+mixin product(data = {})
+    .product&attributes(attributes)
+        .container
+            .row
+                .col-6
+                    .product_slider
+                        .product_slide
+                            img(src="", alt="alt")
+                        .product_slide
+                            img(src="", alt="alt")
+                        .product_slide
+                            img(src="", alt="alt")
+                        .product_slide
+                            img(src="", alt="alt")
+                        .product_slide
+                            img(src="", alt="alt")
+
+                .col-6
+                    .product_info
+                        p.product_code= data.code
+                        h1.product_name= data.title
+                        p.price= data.price
+                        .rate
+                            input#(type="checkbox", name="")
+                            input#(type="checkbox", name="")
+                            input#(type="checkbox", name="")
+                            input#(type="checkbox", name="")
+                            input#(type="checkbox", name="")
+                            label(for="")
+                        p.product_descr= data.descr
+                        .product_color
+                            button.btn.btn-primary(type='submit') Submit
+                            button.btn.btn-primary(type='submit') Submit
+                        //- shop now line
+                        .social 
+                            //- 
+                        

@@ -1,5 +1,6 @@
 include ../../blocks/common/icon/icon.pug
 include ../../blocks/header/header.pug
+include ../../blocks/product/product.pug
 include ../../blocks/choice/choice.pug
 include ../../blocks/offer/offer.pug
 include ../../blocks/publicity/publicity.pug
@@ -27,6 +28,7 @@ html(lang="en")
         link(rel="stylesheet", href="css/style.css")
     body.page
         block page
+        block productPage
 
         block scripts
             script(src="js/vendor.js")

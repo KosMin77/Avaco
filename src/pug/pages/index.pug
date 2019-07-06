@@ -1,13 +1,16 @@
 extends ../layouts/base.pug
 
 //- TODO: include page-specific block templates
+include ../../blocks/header/header.pug
+include ../../blocks/choice/choice.pug
+include ../../blocks/publicity/publicity.pug
 
 block page
     //- TODO: add code
     +navigation(data.navigation)
     +header(data.header)
     +choice(data.choice)
-    +offer(data.offer)
+    +offer(data.offer1)
     +publicity(data.publicity)
     +offer(data.offer2)
     +footer(data.footer)

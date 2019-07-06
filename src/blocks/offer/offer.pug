@@ -9,8 +9,8 @@ mixin offer(data = {})
         .container
             .h3.offer_title= data.title
             .row
-                //- .offer_slider
-                //-     each item in data.productWoman
-                //-         .offer_slides
-                //-             img(src=item, alt="alt")
-                //-             p.descr= data.descr
+                .offer_slider
+                    each item in data.product
+                        .offer_slides
+                            img(src=item, alt="alt")
+                            p.descr= data.descr

@@ -15,7 +15,7 @@
     "offer1": {
         "title": "Special discount offer",
         "descr": "Hot price for outgoing season bags $120.00",
-        "productWoman": [
+        "product": [
             "../../img/redBag.jpg",
             "../../img/pinkBag.jpg",
             "../../img/red.jpg",

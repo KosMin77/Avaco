@@ -7614,7 +7614,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .offer .offer_slides {
   height: 356px;
-  margin-left: 10px;
+  padding-left: 50px;
 }
 
 .offer .descr {

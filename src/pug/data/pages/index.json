@@ -27,7 +27,7 @@
         "she": "for Her",
         "he": "for Him"
     },
-    "offer": {
+    "offer1": {
         "title": "Special discount offer",
         "descr": "Hot price for outgoing season bags $120.00",
         "productWoman":[
@@ -40,7 +40,10 @@
             "../../img/pinkBag.jpg",
             "../../img/blackBag.jpg"
         ],
-        "productMan":[
+        "offer2": {
+            "title": "Special discount offer",
+            "descr": "Hot price for outgoing season bags $120.00",
+            "productMan":[
             "../../img/brownBag.jpg",
             "../../img/mansBlack.jpg",
             "../../img/mansBlack2.jpg",

@@ -1,20 +1,5 @@
 {
-    "navigation": {
-        "title": "./img/logo.png",
-        "menu": [
-            "Home",
-            "Woman",
-            "Man",
-            "Collection",
-            "Sale",
-            "Contacts"
-        ],
-        "icons":[
-            "search",
-            "heart",
-            "shopping-cart"
-        ]
-    },
+    "pageTitle": "Home page — Avako",
     "header": {
         "title": "Avangarde there true by first Galant",
         "subtitle": "Clarity lines geometric shapes!",
@@ -30,7 +15,7 @@
     "offer1": {
         "title": "Special discount offer",
         "descr": "Hot price for outgoing season bags $120.00",
-        "productWoman":[
+        "productWoman": [
             "../../img/redBag.jpg",
             "../../img/pinkBag.jpg",
             "../../img/red.jpg",
@@ -39,34 +24,10 @@
             "../../img/red.jpg",
             "../../img/pinkBag.jpg",
             "../../img/blackBag.jpg"
-        ],
-        "offer2": {
-            "title": "Special discount offer",
-            "descr": "Hot price for outgoing season bags $120.00",
-            "productMan":[
-            "../../img/brownBag.jpg",
-            "../../img/mansBlack.jpg",
-            "../../img/mansBlack2.jpg",
-            "../../img/redBag.jpg",
-            "../../img/pinkBag.jpg",
-            "../../img/blackBag.jpg"
         ]
     },
     "publicity": {
         "title": "Do not miss the offer of the season from GALANT!",
         "subtitle": "GALANTEYA in the season autumn-winter 2018-2019. So it's time to remember the lessons of geometry, because that on the shelves of "
-    },
-    "footer": {
-        "title": "Avako",
-        "subtitle": "For all questions please contact us by mail for all questions for all questions<br>please contact there this all us by mail for all questions ",
-        "call": "Call 24/7: 800.123.45.67",
-        "delivery": "Fast Delifery",
-        "prices": "Best Prices",
-        "assortment": "Large Assortment",
-        "discounts": "Favorable Discounts",
-        "descr": "Hot offer click and go to the link"
-    },
-    "copyrights": {
-        "title": "Copyright © 2019. Wordpress Avako. All rights reserved"
     }
 }

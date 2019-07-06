@@ -14,8 +14,8 @@ const {env} = minimist(process.argv.slice(2), {
  * Path prefixes
  */
 const TOP = '.';
-const SRC = `${TOP}/src`
-const DIST = `${TOP}/dist`;
+const SRC = `${TOP}/src`;
+const DIST = `${TOP}/docs`;
 
 module.exports = {
     env,
@@ -37,7 +37,7 @@ module.exports = {
         },
         deploy: {
             src: [`${DIST}/**`, `!${DIST}/**/*.map`],
-            dest: `/htdocs/test`,
+            dest: '/htdocs/test',
         },
         fonts: {
             src: `${SRC}/fonts/*.{ttf,woff,woff2}`,
@@ -115,18 +115,18 @@ module.exports = {
             outputStyle: 'expanded',
         },
         svgSprite: {
-			mode: {
-				symbol: {
-					sprite: '../img/icons.svg',
-					render: {
-						scss: {
-							dest: '../blocks/common/icon/icon.scss',
-							template: `${SRC}/templates/icon.mustache`,
-						}
-					}
-				}
-			}
-		},
+            mode: {
+                symbol: {
+                    sprite: '../img/icons.svg',
+                    render: {
+                        scss: {
+                            dest: '../blocks/common/icon/icon.scss',
+                            template: `${SRC}/templates/icon.mustache`,
+                        }
+                    }
+                }
+            }
+        },
         stylelint: {
             failAfterError: false,
             fix: true,

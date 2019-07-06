@@ -10,21 +10,15 @@ mixin product(data = {})
             .row
                 .col-6
                     .product_slider
-                        .product_slide
-                            img(src="", alt="alt")
-                        .product_slide
-                            img(src="", alt="alt")
-                        .product_slide
-                            img(src="", alt="alt")
-                        .product_slide
-                            img(src="", alt="alt")
-                        .product_slide
-                            img(src="", alt="alt")
+                        //-  each item in data.slider
+                        //-     .product_slide
+                        //-         img(src=item, alt="alt")
+                        
 
                 .col-6
                     .product_info
                         p.product_code= data.code
-                        h1.product_name= data.title
+                        h1.product_name= data.productName
                         p.price= data.price
                         .rate
                             input(type="checkbox", name="")
@@ -32,12 +26,15 @@ mixin product(data = {})
                             input(type="checkbox", name="")
                             input(type="checkbox", name="")
                             input(type="checkbox", name="")
-                            label(for="")
+                            label(for="")= data.reviewLabel
                         p.product_descr= data.descr
+                        p.product_category= data.category
                         .product_color
+                            p.color= data.color
                             button.btn.btn-primary(type='submit') Submit
                             button.btn.btn-primary(type='submit') Submit
                         //- shop now line
                         .social 
                             //- 
+                        
                         

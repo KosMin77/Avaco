@@ -12,5 +12,6 @@ mixin offer(data = {})
                 .offer_slider
                     each item in data.product
                         .offer_slides
-                            img(src=item, alt="alt")
-                            p.descr= data.descr
+                            a(href="http://localhost:3000/productPage.html") 
+                                img(src=item, alt="alt")
+                            p.offer_descr= data.descr

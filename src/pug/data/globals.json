@@ -20,12 +20,12 @@
         "title": "Special discount offer",
         "descr": "Hot price for outgoing season bags $120.00",
         "product": [
-            "../../img/brownBag.jpg",
-            "../../img/mansBlack.jpg",
-            "../../img/mansBlack2.jpg",
-            "../../img/redBag.jpg",
-            "../../img/pinkBag.jpg",
-            "../../img/blackBag.jpg"
+            "./img/brownBag.jpg",
+            "./img/mansBlack.jpg",
+            "./img/mansBlack2.jpg",
+            "./img/redBag.jpg",
+            "./img/pinkBag.jpg",
+            "./img/blackBag.jpg"
         ]
     },
     "footer": {

@@ -19,7 +19,7 @@
     // BEM elements
     // TODO: add code
     
-    .offer_title{
+    &_title{
         text-align: center;
         color: #201c37;
         font-family: 'Archivo';
@@ -29,17 +29,19 @@
         margin: 20px 0;
     }
     
-    .offer_slider{
+    &_slider{
         display: inline;
         overflow: hidden;
     }
 
-    .offer_slides{
+    &_slides{
         height: 356px;
-        padding-left: 50px;
+        width: 320px;
+        // margin-left: 30px;
+        margin-right: 30px;
     }
 
-    .descr{
+    &_descr{
         width: 250px;
         margin-top: 15px;
     }

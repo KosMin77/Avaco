@@ -1,6 +1,31 @@
 {
     "pageTitle": "Rockstud spike bag — Avako",
-    "product2": {
-        
+    "rockstud": {
+        "code": "Product Code: RW0B0E02EJA",
+        "productName": "ROCKSTUD SPIKE BAG",
+        "price": "340 $",
+        "reviewLabel": "(24 reviews)",
+        "descr": "Small Rockstud Spike chain bag by Valentino Garavani made from soft sheep's nappa leather. Quilted model is decorated with small rivets. The bag can be worn on the shoulder, across the chest or in the hand thanks to a removable handle and a detachable movable chain. <br>- Quilted lamb skin.<br>- Rivets and metal accessories.<br>- Valve with lock turntable.<br>- Nappa leather lining.<br>- Dimensions: 20 (W) x 11.5 (H) x 5 (D) cm.",
+        "category": "Categories: BAGS / CLOTCHES, GIFTS, VALENTINO,",
+        "color": "Color of product:",
+        "like": "TO FAVORITES",
+        "social": "SOCIAL NETWORKS",
+        "specif": "Specifications",
+        "addInfo": "Additional Information",
+        "review": "Reviews (3)",
+        "comment": "3 COMMENTS ON THIS PRODUCT",
+        "admin": "admin – October 17, 2018",
+        "addReview": "ADD A REVIEW",
+        "rating": "Your rating",
+        "yourComment": "Your comment *",
+        "name": "Your comment *",
+        "email": "Email*",   
+        "slider": [
+            "../img/red.jpg",
+            "../img/red2.png",
+            "../img/red3.png",
+            "../img/red4.png",
+            "../img/red5.png"
+        ]
     }
 }

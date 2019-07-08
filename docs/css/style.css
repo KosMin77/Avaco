@@ -7965,6 +7965,10 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
+.offer .slick-list {
+  padding: 0 !important;
+}
+
 .offer_slides {
   height: 356px;
   padding: 0 15px;

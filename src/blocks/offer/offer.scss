@@ -34,6 +34,10 @@
         overflow: hidden;
     }
 
+    .slick-list{
+        padding: 0 !important;
+    }
+
     &_slides{
         height: 356px;
         padding: 0 15px;

@@ -25,19 +25,7 @@
 // TODO: add code here
 
  // ** creation active menu through html & boy animation ** //
-$(document).ready(function() {
 
-   $(".nav_links").click(function() {
-      $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top-85
-      }, {
-         duration: 700,
-         easing: "swing"
-      });
-      return false;
-   });
- 
- });
 
 // ---------------------------- END EVENT HANDLERS ----------------------------
 
@@ -49,6 +37,16 @@ $(document).ready(function() {
  */
 function initBlock() {
     // TODO: add code here
+      $(".nav_links").click(function() {
+         $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top - 110
+         }, {
+            duration: 700,
+            easing: "swing"
+         });
+         return false;
+      });
+
     return true;
 }
 

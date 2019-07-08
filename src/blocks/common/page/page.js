@@ -4,6 +4,7 @@
 
 import LazyLoader from '../../../js/utils/lazy-loader';
 import offer from '../../offer/offer';
+import navigation from '../../navigation/navigation';
 
 // TODO: import other blocks
 
@@ -85,6 +86,7 @@ function initBlock() {
 
     // TODO: initialize other blocks
     offer.initBlock();
+    navigation.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();

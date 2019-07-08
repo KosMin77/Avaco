@@ -47,6 +47,8 @@ function initBlock() {
         slidesToScroll: 1,
         // asNavFor: '.slider-for',
         dots: true,
+        loop: true,
+        infinite: true,
         centerMode: true,
         focusOnSelect: true,
         arrows: false,

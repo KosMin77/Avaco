@@ -26,6 +26,14 @@
             "../img/red3.png",
             "../img/red4.png",
             "../img/red5.png"
+        ],
+        "breadcrumb": [
+            "HOME",
+            "CATALOG",
+            "BOUTICIAN VALENTINO",
+            "BOUTICIAN",
+            "BAG VALENTINO GARAVANI",
+            "ROCKSTUD SPIKE BAG"
         ]
     }
 }

@@ -5,7 +5,7 @@
     // Selector styles
     // TODO: add code
     
-    .footer_contacts{
+    &_contacts{
         background-image: url(../img/mail.jpg);
         background-position: center;
         max-width: 100%;
@@ -13,13 +13,24 @@
         text-align: center;
         padding-top: 150px;
     }
-    .footer_wrapp{
+    &_wrapp{
         display: flex;
     }
-    .footer_block_wrapp{
+    &_chapter{
+        color: #2b3342;
+        font-family: "Archivo";
+        font-size: 23px;
+        font-weight: 600;
+    }
+    &_descr{
+        color: #989998;
+        font-family: 'Archivo';
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &_block_wrapp{
         border: 1px solid black;
         text-align: center;
-        // width: 285px;
         padding: 65px 0;
     }
     .title{
@@ -37,26 +48,45 @@
         line-height: 34px;
         margin-top: 15px;
     }
-    .call{
+    &_call{
+        display: flex;
+        justify-content: center;
         font-size: 24px;
         font-weight: 400;
         line-height: 67px;
-        color: white;
         font-family: 'Archivo';
+    }
+    .call{
+        text-decoration: none;
+        color: white;
+    }
+    .number{
+        color: darkred;
+        margin-left: 10px;
+        font-weight: 600;
         text-decoration: none;
     }
+
     .btn_subscribe{
         background-color: black;
         color: white;
         font-family: 'Archivo';
-        font-size: 14px;
-        font-weight: 400;
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
         padding: 16px 45px;
+        margin-top: -2px;
         border: none;
         outline: none;
     }
+    .btn_subscribe:hover{
+        color: lime;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+    }
     .email{
-        height: 45px;
+        height: 46px;
         width: 400px;
         padding-left: 25px;
         font-size: 16px;
@@ -66,12 +96,17 @@
 
     .footer_social{
         margin-top: 40px;
+        display: flex;
+        justify-content: center;
     }
-    .fas,
+    .footer_social_links{
+        list-style-type: none;
+    }
+
     .fab{
-        margin-right: 15px;
+        margin-right: 20px;
         color: white;
-        font-size: 24px;
+        font-size: 28px;
     }
     .fa-linkedin-in:hover,
     .fa-facebook-f:hover{
@@ -81,10 +116,6 @@
     .fa-youtube:hover,
     .fa-instagram:hover {
         color: #FD2321;
-        transition:.3s;
-    }
-    .fa-rss:hover{
-        color: orangered;
         transition:.3s;
     }
     .fa-twitter:hover{

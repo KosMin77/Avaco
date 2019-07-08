@@ -34,6 +34,21 @@
  */
 function initBlock() {
     // TODO: add code here
+    $('.product_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.product_slide'
+      });
+      $('.product_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.product_slider',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+      });
     return true;
 }
 

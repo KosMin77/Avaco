@@ -4,13 +4,12 @@
         "title": "Avangarde there true by first Galant",
         "subtitle": "Clarity lines geometric shapes!",
         "descr": "Galanteya in the season autumn-winter 2018-2019. So it's time to remember the lessons of geometry, because that...",
-        "phone": "800.366.40.72",
-        "forHer": "forHer",
-        "forHim": "forHim"
+        "phone": "800.366.40.72"
     },
     "choice": {
-        "she": "for Her",
-        "he": "for Him"
+        "she": " Her",
+        "he": " Him",
+        "for": "for"
     },
     "offer1": {
         "title": "Special discount offer",

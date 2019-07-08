@@ -61,31 +61,194 @@
     </div>
     <div class="product">
         <div class="container">
+            <ul class="product__breadcrumb">
+                <li class="breadcrumb__list">
+                    <a class="breadcrumb__links" href="#">HOME</a>
+                </li>
+                <li class="breadcrumb__list">
+                    <a class="breadcrumb__links" href="#">CATALOG</a>
+                </li>
+                <li class="breadcrumb__list">
+                    <a class="breadcrumb__links" href="#">BOUTICIAN VALENTINO</a>
+                </li>
+                <li class="breadcrumb__list">
+                    <a class="breadcrumb__links" href="#">BOUTICIAN</a>
+                </li>
+                <li class="breadcrumb__list">
+                    <a class="breadcrumb__links" href="#">BAG VALENTINO GARAVANI</a>
+                </li>
+                <li class="breadcrumb__list">
+                    <a class="breadcrumb__links" href="#">ROCKSTUD SPIKE BAG</a>
+                </li>
+            </ul>
             <div class="row">
                 <div class="col-6">
-                    <div class="product_slider"></div>
+                    <div class="product_slider">
+                        <div class="product_slide">
+                            <img src="../img/red.jpg" alt="alt" />
+                        </div>
+                        <div class="product_slide">
+                            <img src="../img/red2.png" alt="alt" />
+                        </div>
+                        <div class="product_slide">
+                            <img src="../img/red3.png" alt="alt" />
+                        </div>
+                        <div class="product_slide">
+                            <img src="../img/red4.png" alt="alt" />
+                        </div>
+                        <div class="product_slide">
+                            <img src="../img/red5.png" alt="alt" />
+                        </div>
+                    </div>
                 </div>
                 <div class="col-6">
-                    <div class="product_info">
-                        <p class="product_code"></p>
-                        <h1 class="product_name"></h1>
-                        <p class="price"></p>
-                        <div class="rate">
-                            <input type="checkbox" name="" />
-                            <input type="checkbox" name="" />
-                            <input type="checkbox" name="" />
-                            <input type="checkbox" name="" />
-                            <input type="checkbox" name="" />
-                            <label for=""></label>
+                    <div class="product__info">
+                        <h1 class="product__name">ROCKSTUD SPIKE BAG</h1>
+                        <p class="product__code">Product Code: RW0B0E02EJA</p>
+                        <p class="product__price">340 $</p>
+                        <form class="product__stars" action="#">
+                            <p class="product__review">(24 reviews)</p>
+                            <input class="rating" id="star1" type="radio" name="radio" />
+                            <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
+                            <input class="rating" id="star2" type="radio" name="radio" />
+                            <label class="star" for="star2"><i class="fas fa-star pointer"></i></label>
+                            <input class="rating" id="star3" type="radio" name="radio" />
+                            <label class="star" for="star3"><i class="fas fa-star pointer"></i></label>
+                            <input class="rating" id="star4" type="radio" name="radio" checked="" />
+                            <label class="star" for="star4"><i class="fas fa-star pointer"></i></label>
+                            <input class="rating" id="star5" type="radio" name="radio" />
+                            <label class="star" for="star5"><i class="fas fa-star pointer"></i></label>
+                        </form>
+                        <p class="product__descr">Small Rockstud Spike chain bag by Valentino Garavani made from soft sheep's nappa leather. Quilted model is decorated with small rivets. The bag can be worn on the shoulder, across the chest or in the hand thanks to a removable handle and a detachable movable chain. <br>- Quilted lamb skin.<br>- Rivets and metal accessories.<br>- Valve with lock turntable.<br>- Nappa leather lining.<br>- Dimensions: 20 (W) x 11.5 (H) x 5 (D) cm.</p>
+                        <p class="product__category">Categories: BAGS / CLOTCHES, GIFTS, VALENTINO,</p>
+                        <p class="product__color">Color of product:</p>
+                        <button class="btn btn__pink" type="submit"> </button>
+                        <button class="btn btn__red" type="submit"> </button>
+                        <P class="product__social__title">SOCIAL NETWORKS</P>
+                        <ul class="product__social">
+                            <li class="product__social_link">
+                                <a class="footer__social_link_item" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="product__social_link">
+                                <a class="footer__social_link_item" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="product__social_link">
+                                <a class="footer__social_link_item" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="product__social_link">
+                                <a class="footer__social_link_item" href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="product__social_link">
+                                <a class="footer__social_link_item" href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__tabs">
+                        <span class="product__tab">
+                            <p class="product__tabs-name">Specifications</p>
+                        </span>
+                        <span class="product__tab">
+                            <p class="product__tabs-name">Additional Information</p>
+                        </span>
+                        <span class="product__tab">
+                            <p class="product__tabs-name">Reviews (3)</p>
+                        </span>
+                    </div>
+                    <div class="product__comments">
+                        <div class="product__tab__content">
+                            <div class="tab_item"></div>
+                            <div class="tab_item"></div>
+                            <div class="tab_item">
+                                <h1 class="product__comment-title">3 COMMENTS ON THIS PRODUCT</h1>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="./img/no-image.jpg" alt="alt" />
+                                    </div>
+                                    <div class="col-8">
+                                        <form class="product__stars" action="#">
+                                            <input class="rating" id="star1" type="radio" name="radio" />
+                                            <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star2" type="radio" name="radio" />
+                                            <label class="star" for="star2"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star3" type="radio" name="radio" />
+                                            <label class="star" for="star3"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star4" type="radio" name="radio" checked="" />
+                                            <label class="star" for="star4"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star5" type="radio" name="radio" />
+                                            <label class="star" for="star5"><i class="fas fa-star pointer"></i></label>
+                                        </form>
+                                        <p class="product__admin">admin – October 17, 2018</p>
+                                        <p class="product__admin-comment">Dolor sit amet conse ctetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="./img/no-image.jpg" alt="alt" />
+                                    </div>
+                                    <div class="col-8">
+                                        <form class="product__stars" action="#">
+                                            <input class="rating" id="star1" type="radio" name="radio" />
+                                            <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star2" type="radio" name="radio" />
+                                            <label class="star" for="star2"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star3" type="radio" name="radio" />
+                                            <label class="star" for="star3"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star4" type="radio" name="radio" checked="" />
+                                            <label class="star" for="star4"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star5" type="radio" name="radio" />
+                                            <label class="star" for="star5"><i class="fas fa-star pointer"></i></label>
+                                        </form>
+                                        <p class="product__admin">admin – October 17, 2018</p>
+                                        <p class="product__admin-comment">Dolor sit amet conse ctetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="./img/no-image.jpg" alt="alt" />
+                                    </div>
+                                    <div class="col-8">
+                                        <form class="product__stars" action="#">
+                                            <input class="rating" id="star1" type="radio" name="radio" />
+                                            <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star2" type="radio" name="radio" />
+                                            <label class="star" for="star2"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star3" type="radio" name="radio" />
+                                            <label class="star" for="star3"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star4" type="radio" name="radio" checked="" />
+                                            <label class="star" for="star4"><i class="fas fa-star pointer"></i></label>
+                                            <input class="rating" id="star5" type="radio" name="radio" />
+                                            <label class="star" for="star5"><i class="fas fa-star pointer"></i></label>
+                                        </form>
+                                        <p class="product__admin">admin – October 17, 2018</p>
+                                        <p class="product__admin-comment">Dolor sit amet conse ctetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <h1 class="product__new-review">ADD A REVIEW</h1>
+                                <p class="product__new-rating">Your rating</p>
+                                <form class="product__stars" action="#">
+                                    <input class="rating" id="star1" type="radio" name="radio" />
+                                    <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
+                                    <input class="rating" id="star2" type="radio" name="radio" />
+                                    <label class="star" for="star2"><i class="fas fa-star pointer"></i></label>
+                                    <input class="rating" id="star3" type="radio" name="radio" />
+                                    <label class="star" for="star3"><i class="fas fa-star pointer"></i></label>
+                                    <input class="rating" id="star4" type="radio" name="radio" checked="" />
+                                    <label class="star" for="star4"><i class="fas fa-star pointer"></i></label>
+                                    <input class="rating" id="star5" type="radio" name="radio" />
+                                    <label class="star" for="star5"><i class="fas fa-star pointer"></i></label>
+                                </form>
+                                <label class="star" for="comment">Your comment *</label>
+                                <input id="comment" type="text" name="" />
+                                <label class="star" for="name">Name *</label>
+                                <input id="name" type="text" name="" />
+                                <label class="email" for="email">Email*</label>
+                                <input id="email" type="email" name="" />
+                                <button class="btn btn-shop" type="submit">Shop Now!</button>
+                            </div>
                         </div>
-                        <p class="product_descr"></p>
-                        <p class="product_category"></p>
-                        <div class="product_color">
-                            <p class="color"></p>
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                            <button class="btn btn-primary" type="submit">Submit</button>
-                        </div>
-                        <div class="social"> </div>
                     </div>
                 </div>
             </div>
@@ -116,19 +279,19 @@
                     </div>
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/redBag.jpg" alt="alt" />
+                            <img src="./img/brownBag.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/pinkBag.jpg" alt="alt" />
+                            <img src="./img/mansBlack.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/blackBag.jpg" alt="alt" />
+                            <img src="./img/mansBlack2.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>
@@ -140,19 +303,19 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-3 footer_block_wrapp">
-                    <h3 class="footer_delivery">Fast Delifery</h3>
+                    <h3 class="footer_chapter">Fast Delifery</h3>
                     <p class="footer_descr">Hot offer click and go to the link</p>
                 </div>
                 <div class="col-3 footer_block_wrapp">
-                    <h3 class="footer_prices">Best Prices</h3>
+                    <h3 class="footer_chapter">Best Prices</h3>
                     <p class="footer_descr">Hot offer click and go to the link</p>
                 </div>
                 <div class="col-3 footer_block_wrapp">
-                    <h3 class="footer_assortment">Large Assortment</h3>
+                    <h3 class="footer_chapter">Large Assortment</h3>
                     <p class="footer_descr">Hot offer click and go to the link</p>
                 </div>
                 <div class="col-3 footer_block_wrapp">
-                    <h3 class="footer_discounts">Favorable Discounts</h3>
+                    <h3 class="footer_chapter">Favorable Discounts</h3>
                     <p class="footer_descr">Hot offer click and go to the link</p>
                 </div>
             </div>
@@ -163,20 +326,30 @@
                 <div class="col-2"></div>
                 <div class="col-8">
                     <h1 class="title">Avako</h1>
-                    <p class="subtitle">For all questions please contact us by mail for all questions for all questions<br>please contact there this all us by mail for all questions </p>
+                    <p class="subtitle">For all questions please contact us by mail for all questions for all questions<br>please contact there this all us by mail for</p>
                     <div class="footer_call">
-                        <a class="call" href="tel:+800.123.45.67">Call 24/7: 800.123.45.67</a>
+                        <a class="call" href="tel:+800.123.45.67">Call 24/7:</a>
+                        <a class="number" href="tel:+800.123.45.67"> 800.123.45.67</a>
                     </div>
                     <input class="email" type="search" placeholder="Your mail" />
                     <button class="btn btn_subscribe" type="submit">Subscribe</button>
-                    <div class="footer_social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fas fa-rss"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    <ul class="footer_social">
+                        <li class="footer_social_link">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="footer_social_link">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="footer_social_link">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="footer_social_link">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="footer_social_link">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-2"></div>
             </div>

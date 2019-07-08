@@ -12,9 +12,11 @@ mixin choice(data = {})
                     .choice__panel
                         img(src="./img/forHer.jpg", alt="").choice__image
                         a.choice__link(href="#")
-                            span.choice__text= data.she
+                            p.choice__for= data.for
+                            p.choice__text= data.she
                 .col-6
                     .choice__panel
                         img(src="./img/forHim.jpg", alt="", srcset="./img/forHim@2.jpg 2x").choice__image
                         a.choice__link(href="#")
-                            span.choice__text= data.he
+                            p.choice__for= data.for
+                            p.choice__text= data.he

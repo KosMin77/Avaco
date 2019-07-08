@@ -16,6 +16,180 @@
 
     // BEM elements
     // TODO: add code
+    &__category, &__review, &__descr, &__name, &__price, &__color, &__tabs-name, &__social__title, &__code {
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        color: #414243;
+    }
+
+    &__nav {
+        display: flex;
+    }
+    &__breadcrumb{
+        margin-bottom: 25px;
+        margin-top: 10px;
+        display: flex;
+        .breadcrumb__list::after {
+            color: black;
+            content: "/\00a0";
+        }
+        .breadcrumb__links {
+            color: #5a5b5c;
+            font-family: 'Roboto';
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+    .breadcrumb__links:active,
+    .breadcrumb__links:hover {
+        border-radius: 8px;
+        font-weight: 600;
+        color: deepskyblue;
+    }
+
+    &__info {
+        margin-left: 50px;
+    }
+
+    &__name {
+        font-family: "Myriad Pro";
+        font-size: 36px;
+        line-height: 20px;
+    }
+
+    &__code {
+        color: #030303;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    &__price{
+        color: #fc3e18;
+        font-size: 28px;
+    }
+
+    &__stars {
+        margin-left: -51px;
+        width: 436px;
+        font-size: 18px;
+        letter-spacing: 8px;
+        color: #9da1a6;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 49px;
+        justify-content: space-around;
+      }
+
+    &__review {
+    width: 220px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    }
+      
+    .pointer {
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.5);
+        transition: .5s ease;
+    }
+    }
+
+    .rating {
+    display: none;
+    &:checked ~ label i {
+        color: gold;
+    }
+    }
+
+    &__category,
+    &__descr {
+    margin-top: 15px;
+    }
+    
+    &__color {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .btn__pink {
+        height: 45px;
+        width: 45px;
+        background-color: pink;
+        margin-top: 5px;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+    }
+    
+    .btn__red {
+        height: 45px;
+        width: 45px;
+        background-color: red;
+        margin-top: 5px;
+        border: none;
+        outline: none;
+    }
+
+    &__social__title {
+        margin-top: 20px;
+    }
+
+    &__social{
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .fab {
+        margin: 10px 5px;
+        color: gray;
+        font-size: 22px;
+
+    }
+
+    .fa-linkedin-in:hover,
+    .fa-facebook-f:hover{
+        color: blue;
+        transition:.3s;
+    }
+
+    .fa-youtube:hover,
+    .fa-instagram:hover {
+        color: #FD2321;
+        transition:.3s;
+    }
+
+    .fa-twitter:hover{
+        color: darkturquoise;
+        transition: .3s;
+    }
+
+    &__tabs{
+        padding: 19px 50px 10px 38px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        border-bottom: 1px solid gray;
+    }
+
+    &__tab{
+        text-align: center;
+        color: #b7bacd;
+        cursor: pointer;
+    }
+    .tab:hover{
+        color: white;
+    }
+    
+    .tabs-icon{
+        text-align: center;
+        color: #b7bacd
+    }
+    
+    
+
 
     // Bem modifiers
     // TODO: add code

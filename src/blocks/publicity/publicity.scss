@@ -29,15 +29,31 @@
     .btn-shop{
         background-color: black;
         color: white;
-        font-family: Archivo;
+        font-family: 'Archivo';
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 600;
+        letter-spacing: 0.1em;
         line-height: 28px;
-        border: none;
+        border: 1px solid black;
         outline: none;
         padding: 20px 45px;
         margin-right: 10px;
         margin-top: 40px;
+        overflow: hidden;
+
+    }
+    .btn-shop:before {
+        font-family: 'FontAwesome';
+        content:"\f07a";
+        color: transparent;
+        position: absolute;
+        top: 390px;
+        left: -30px;
+        transition: all 900ms ease;
+    }
+    .btn-shop:hover:before {
+        left: 160px;
+        color: white;
     }
     // @media queries
     // TODO: add code

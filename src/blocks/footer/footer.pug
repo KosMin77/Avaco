@@ -9,16 +9,16 @@ mixin footer(data = {})
         .container-fluid
             .row
                 .col-3.footer_block_wrapp
-                    h3.footer_delivery= data.delivery
+                    h3.footer_chapter= data.delivery
                     p.footer_descr= data.descr
                 .col-3.footer_block_wrapp
-                    h3.footer_prices= data.prices
+                    h3.footer_chapter= data.prices
                     p.footer_descr= data.descr
                 .col-3.footer_block_wrapp
-                    h3.footer_assortment= data.assortment
+                    h3.footer_chapter= data.assortment
                     p.footer_descr= data.descr
                 .col-3.footer_block_wrapp
-                    h3.footer_discounts= data.discounts
+                    h3.footer_chapter= data.discounts
                     p.footer_descr= data.descr
         .container
         .footer_contacts
@@ -29,19 +29,11 @@ mixin footer(data = {})
                     p.subtitle!= data.subtitle
                     .footer_call
                         a(href="tel:+800.123.45.67").call= data.call
+                        a(href="tel:+800.123.45.67").number= data.number
                     input.email(type="search" placeholder="Your mail")
                     button.btn.btn_subscribe(type='submit') Subscribe
-                    .footer_social
-                        a(href="#")
-                            i(class="fab fa-facebook-f")
-                        a(href="#")
-                            i(class="fab fa-instagram")
-                        a(href="#")
-                            i(class="fas fa-rss")
-                        a(href="#")
-                            i(class="fab fa-linkedin-in")
-                        a(href="#")
-                            i(class="fab fa-youtube")
-                        a(href="#")
-                            i(class="fab fa-twitter")
+                    ul.footer_social
+                        each item in data.icon
+                            li.footer_social_link: a(href="#")
+                                i(class=`fab fa-${item}`)
                 .col-2

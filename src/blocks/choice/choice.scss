@@ -41,6 +41,19 @@
         display: flex;
         align-items: center;
         padding-left: $gutter*2;
+        font-family: 'Archivo';
+        color: #2b3342;
+        font-size: 40px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    &__for{
+        font-family: 'GreatVibes';
+        margin-right: 10px;
+        font-style: italic;
+        font-size: 32px;
+        margin-top: 10px;
     }
 
     // Bem modifiers

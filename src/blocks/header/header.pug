@@ -14,5 +14,7 @@ mixin header(data = {})
                         h1.title= data.title
                         p.descr= data.descr
                         button.btn.btn-shop(type='submit') Shop Now!
-                        button.btn.btn-phone(type='submit')= data.phone
+                        button.btn.btn-phone(type='submit')
+                            //- i(class="fas fa-phone-alt")
+                            p.phone= data.phone
                     .col-6

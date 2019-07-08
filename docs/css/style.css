@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Archivo|Great+Vibes|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo:400,400i|Great+Vibes|Roboto&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7426,6 +7426,7 @@ a.text-dark:hover, a.text-dark:focus {
   top: 0;
   z-index: 1;
   background-color: white;
+  border-bottom: 2px solid gray;
 }
 
 .navigation a {
@@ -7493,7 +7494,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 115vh;
 }
 
-.header .header_main {
+.header_main {
   padding-top: 200px;
 }
 
@@ -7525,17 +7526,39 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 30px;
 }
 
+.header .fa-phone-alt {
+  color: black;
+  z-index: 10;
+}
+
 .header .btn-shop {
   background-color: black;
   color: white;
-  font-family: Archivo;
+  font-family: 'Archivo';
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   line-height: 28px;
   border: 1px solid black;
   outline: none;
   padding: 20px 45px;
   margin-right: 10px;
+  overflow: hidden;
+}
+
+.header .btn-shop:before {
+  font-family: 'FontAwesome';
+  content: "\f07a";
+  color: transparent;
+  position: absolute;
+  top: 340px;
+  left: -30px;
+  transition: all 900ms ease;
+}
+
+.header .btn-shop:hover:before {
+  left: 160px;
+  color: white;
 }
 
 .header .btn-phone {
@@ -7543,7 +7566,8 @@ a.text-dark:hover, a.text-dark:focus {
   color: black;
   font-family: 'Archivo';
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   line-height: 28px;
   padding: 18px 40px;
   outline: none;
@@ -7553,6 +7577,193 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * Styles for the product block.
  */
+.product__category, .product__review, .product__descr, .product__name, .product__price, .product__color, .product__tabs-name, .product__social__title, .product__code {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  color: #414243;
+}
+
+.product__nav {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.product__breadcrumb {
+  margin-bottom: 25px;
+  margin-top: 10px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.product__breadcrumb .breadcrumb__list::after {
+  color: black;
+  content: "/\00a0";
+}
+
+.product__breadcrumb .breadcrumb__links {
+  color: #5a5b5c;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.product .breadcrumb__links:active,
+.product .breadcrumb__links:hover {
+  border-radius: 8px;
+  font-weight: 600;
+  color: deepskyblue;
+}
+
+.product__info {
+  margin-left: 50px;
+}
+
+.product__name {
+  font-family: "Myriad Pro";
+  font-size: 36px;
+  line-height: 20px;
+}
+
+.product__code {
+  color: #030303;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.product__price {
+  color: #fc3e18;
+  font-size: 28px;
+}
+
+.product__stars {
+  margin-left: -51px;
+  width: 436px;
+  font-size: 18px;
+  letter-spacing: 8px;
+  color: #9da1a6;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-left: 49px;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+
+.product__review {
+  width: 220px;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+}
+
+.product .pointer {
+  cursor: pointer;
+}
+
+.product .pointer:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  transition: .5s ease;
+}
+
+.product .rating {
+  display: none;
+}
+
+.product .rating:checked ~ label i {
+  color: gold;
+}
+
+.product__category, .product__descr {
+  margin-top: 15px;
+}
+
+.product__color {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.product .btn__pink {
+  height: 45px;
+  width: 45px;
+  background-color: pink;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+.product .btn__red {
+  height: 45px;
+  width: 45px;
+  background-color: red;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+}
+
+.product__social__title {
+  margin-top: 20px;
+}
+
+.product__social {
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.product .fab {
+  margin: 10px 5px;
+  color: gray;
+  font-size: 22px;
+}
+
+.product .fa-linkedin-in:hover,
+.product .fa-facebook-f:hover {
+  color: blue;
+  transition: .3s;
+}
+
+.product .fa-youtube:hover,
+.product .fa-instagram:hover {
+  color: #FD2321;
+  transition: .3s;
+}
+
+.product .fa-twitter:hover {
+  color: darkturquoise;
+  transition: .3s;
+}
+
+.product__tabs {
+  padding: 19px 50px 10px 38px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin-left: 50px;
+  border-bottom: 1px solid gray;
+}
+
+.product__tab {
+  text-align: center;
+  color: #b7bacd;
+  cursor: pointer;
+}
+
+.product .tab:hover {
+  color: white;
+}
+
+.product .tabs-icon {
+  text-align: center;
+  color: #b7bacd;
+}
+
 /**
  * Styles for the choice block.
  */
@@ -7587,6 +7798,19 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-align-items: center;
           align-items: center;
   padding-left: 30px;
+  font-family: 'Archivo';
+  color: #2b3342;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.choice__for {
+  font-family: 'GreatVibes';
+  margin-right: 10px;
+  font-style: italic;
+  font-size: 32px;
+  margin-top: 10px;
 }
 
 /**
@@ -7662,21 +7886,38 @@ a.text-dark:hover, a.text-dark:focus {
 .publicity .btn-shop {
   background-color: black;
   color: white;
-  font-family: Archivo;
+  font-family: 'Archivo';
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   line-height: 28px;
-  border: none;
+  border: 1px solid black;
   outline: none;
   padding: 20px 45px;
   margin-right: 10px;
   margin-top: 40px;
+  overflow: hidden;
+}
+
+.publicity .btn-shop:before {
+  font-family: 'FontAwesome';
+  content: "\f07a";
+  color: transparent;
+  position: absolute;
+  top: 390px;
+  left: -30px;
+  transition: all 900ms ease;
+}
+
+.publicity .btn-shop:hover:before {
+  left: 160px;
+  color: white;
 }
 
 /**
  * Styles for the footer block.
  */
-.footer .footer_contacts {
+.footer_contacts {
   background-image: url(../img/mail.jpg);
   background-position: center;
   max-width: 100%;
@@ -7685,12 +7926,26 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 150px;
 }
 
-.footer .footer_wrapp {
+.footer_wrapp {
   display: -webkit-flex;
   display: flex;
 }
 
-.footer .footer_block_wrapp {
+.footer_chapter {
+  color: #2b3342;
+  font-family: "Archivo";
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.footer_descr {
+  color: #989998;
+  font-family: 'Archivo';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer_block_wrapp {
   border: 1px solid black;
   text-align: center;
   padding: 65px 0;
@@ -7713,12 +7968,26 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 15px;
 }
 
-.footer .call {
+.footer_call {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
   font-size: 24px;
   font-weight: 400;
   line-height: 67px;
-  color: white;
   font-family: 'Archivo';
+}
+
+.footer .call {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .number {
+  color: darkred;
+  margin-left: 10px;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -7726,15 +7995,24 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: black;
   color: white;
   font-family: 'Archivo';
-  font-size: 14px;
-  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   padding: 16px 45px;
+  margin-top: -2px;
   border: none;
   outline: none;
 }
 
+.footer .btn_subscribe:hover {
+  color: lime;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
 .footer .email {
-  height: 45px;
+  height: 46px;
   width: 400px;
   padding-left: 25px;
   font-size: 16px;
@@ -7744,13 +8022,20 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer .footer_social {
   margin-top: 40px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 
-.footer .fas,
+.footer .footer_social_links {
+  list-style-type: none;
+}
+
 .footer .fab {
-  margin-right: 15px;
+  margin-right: 20px;
   color: white;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .footer .fa-linkedin-in:hover,
@@ -7762,11 +8047,6 @@ a.text-dark:hover, a.text-dark:focus {
 .footer .fa-youtube:hover,
 .footer .fa-instagram:hover {
   color: #FD2321;
-  transition: .3s;
-}
-
-.footer .fa-rss:hover {
-  color: orangered;
   transition: .3s;
 }
 

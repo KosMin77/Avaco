@@ -15,9 +15,9 @@ mixin navigation(data = {})
                     .col-7.nav_menu
                         ul.nav_list
                             each item in data.menu
-                                li.nav_links: a(href="#")= item
+                                li: a.nav_links(href=item.link)= item.text
                     .col-3
                         ul.nav_icons
                             each item in data.icons
-                                li: button.btn.btn-nav(type='submit')
+                                li: a.navigation__icons(href="#")
                                     i(class=`fas fa-${item}`)

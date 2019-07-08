@@ -7429,7 +7429,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom: 2px solid gray;
 }
 
-.navigation a {
+.navigation .nav_links {
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -7439,7 +7439,7 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 67px;
 }
 
-.navigation a:hover {
+.navigation .nav_links:hover {
   color: #ea0c0c;
   font-weight: 900;
   transition: .3s;
@@ -7469,7 +7469,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navigation .nav_icons {
   display: -webkit-flex;
   display: flex;
-  margin-top: 28px;
+  margin-top: 13px;
 }
 
 .navigation .btn-nav {
@@ -7483,6 +7483,16 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: none;
   font-size: 18px;
   width: 10px;
+}
+
+.navigation__icons {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-right: 30px;
+  line-height: 67px;
 }
 
 /**
@@ -7547,7 +7557,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .header .btn-shop:before {
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 free';
   content: "\f07a";
   color: transparent;
   position: absolute;
@@ -7957,8 +7967,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .offer_slides {
   height: 356px;
-  width: 320px;
-  margin-right: 30px;
+  padding: 0 15px;
 }
 
 .offer_descr {
@@ -8019,7 +8028,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .publicity .btn-shop:before {
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 free';
   content: "\f07a";
   color: transparent;
   position: absolute;

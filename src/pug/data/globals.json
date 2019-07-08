@@ -3,12 +3,12 @@
     "navigation": {
         "title": "./img/logo.png",
         "menu": [
-            "Home",
-            "Woman",
-            "Man",
-            "Collection",
-            "Sale",
-            "Contacts"
+            {"link": "./index.html", "text": "Home"},
+            {"link": "#woman",       "text": "Woman"},
+            {"link": "#man",         "text": "Man"},
+            {"link": "#collection",  "text": "Collection"},
+            {"link": "#sale",        "text": "Sale"},
+            {"link": "#contacts",    "text": "Contacts"}
         ],
         "icons": [
             "search",

@@ -27,7 +27,7 @@
  // ** creation active menu through html & boy animation ** //
 $(document).ready(function() {
 
-   $("a").click(function() {
+   $(".nav_links").click(function() {
       $("html, body").animate({
          scrollTop: $($(this).attr("href")).offset().top-85
       }, {

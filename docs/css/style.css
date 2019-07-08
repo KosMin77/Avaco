@@ -7577,7 +7577,7 @@ a.text-dark:hover, a.text-dark:focus {
 /**
  * Styles for the product block.
  */
-.product__category, .product__review, .product__descr, .product__name, .product__price, .product__color, .product__tabs-name, .product__social__title, .product__code {
+.product__category, .product__review, .product__add-rating, .product__add-review, .product__admin, .product__admin-comment, .product__comment-title, .product__descr, .product__name, .product__price, .product__color, .product__tabs-name, .product__social__title, .product__code {
   font-family: 'Roboto';
   font-size: 14px;
   font-weight: 400;
@@ -7749,6 +7749,46 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom: 1px solid gray;
 }
 
+.product__comment-title {
+  font-family: 'Roboto';
+  font-size: 24px;
+  margin: 30px 10px 20px 50px;
+}
+
+.product__admin-pic {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+.product__admin {
+  font-size: 20px;
+}
+
+.product__add-review {
+  font-size: 24px;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.product__add-name, .product__add-email, .product__add-comment {
+  font-size: 14px;
+  margin-left: 50px;
+}
+
+.product__add-rating {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin-left: 45px;
+  margin-bottom: 20px;
+}
+
+.product hr {
+  max-width: 600px;
+  margin: 15px 0 15px 50px;
+}
+
 .product__tab {
   text-align: center;
   color: #b7bacd;
@@ -7764,6 +7804,54 @@ a.text-dark:hover, a.text-dark:focus {
   color: #b7bacd;
 }
 
+.product #area {
+  height: 200px;
+  width: 600px;
+  font-size: 16px;
+  margin-left: 50px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.product #email, .product #name {
+  width: 600px;
+  height: 40px;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.product .btn-shop {
+  background-color: black;
+  color: white;
+  font-family: 'Archivo';
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 28px;
+  border: 1px solid black;
+  outline: none;
+  padding: 20px 45px;
+  margin-left: 50px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.product .btn-shop:before {
+  font-family: 'FontAwesome';
+  content: "\f07a";
+  color: transparent;
+  position: absolute;
+  top: 340px;
+  left: -30px;
+  transition: all 900ms ease;
+}
+
+.product .btn-shop:hover:before {
+  left: 160px;
+  color: white;
+}
+
 /**
  * Styles for the choice block.
  */
@@ -7776,9 +7864,40 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
-.choice__panel:hover > .choice__image {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.choice__image {
+  background: no-repeat scroll 50% 50%;
+  -webkit-animation: 8s scale infinite linear;
+          animation: 8s scale infinite linear;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0, 0, 0);
+            transform: scale(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0, 0, 0);
+            transform: scale(0, 0, 0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0, 0, 0);
+            transform: scale(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0, 0, 0);
+            transform: scale(0, 0, 0);
+  }
 }
 
 .choice__image {

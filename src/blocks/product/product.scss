@@ -16,7 +16,7 @@
 
     // BEM elements
     // TODO: add code
-    &__category, &__review, &__descr, &__name, &__price, &__color, &__tabs-name, &__social__title, &__code {
+    &__category, &__review, &__add-rating, &__add-review, &__admin, &__admin-comment, &__comment-title, &__descr, &__name, &__price, &__color, &__tabs-name, &__social__title, &__code {
         font-family: 'Roboto';
         font-size: 14px;
         font-weight: 400;
@@ -106,7 +106,7 @@
 
     &__category,
     &__descr {
-    margin-top: 15px;
+        margin-top: 15px;
     }
     
     &__color {
@@ -146,7 +146,6 @@
         margin: 10px 5px;
         color: gray;
         font-size: 22px;
-
     }
 
     .fa-linkedin-in:hover,
@@ -174,6 +173,44 @@
         border-bottom: 1px solid gray;
     }
 
+    &__comment-title{
+        font-family: 'Roboto';
+        font-size: 24px;
+        margin: 30px 10px 20px 50px;
+    }
+
+    &__admin-pic{
+        height: 100px;
+        width: 100px;
+        margin-left: 50px;
+    }
+
+    &__admin {
+        font-size: 20px;
+    }
+
+    &__add-review {
+        font-size: 24px;
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &__add-name, &__add-email, &__add-comment {
+        font-size: 14px;
+        margin-left: 50px;
+    }
+    &__add-rating {
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        margin-left: 45px;
+        margin-bottom: 20px;
+    }
+
+    hr {
+        max-width: 600px;
+        margin: 15px 0 15px 50px;
+    }
+
     &__tab{
         text-align: center;
         color: #b7bacd;
@@ -188,7 +225,53 @@
         color: #b7bacd
     }
     
+    #area {
+        height: 200px;
+        width: 600px;
+        font-size: 16px;
+        margin-left: 50px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    #email, #name {
+        width: 600px;
+        height: 40px;
+        padding-left: 10px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
     
+
+    .btn-shop{
+        background-color: black;
+        color: white;
+        font-family: 'Archivo';
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        line-height: 28px;
+        border: 1px solid black;
+        outline: none;
+        padding: 20px 45px;
+        margin-left: 50px;
+        margin-top: 30px;
+        overflow: hidden;
+
+    }
+    .btn-shop:before {
+        font-family: 'FontAwesome';
+        content:"\f07a";
+        color: transparent;
+        position: absolute;
+        top: 340px;
+        left: -30px;
+        transition: all 900ms ease;
+    }
+    .btn-shop:hover:before {
+        left: 160px;
+        color: white;
+    }
 
 
     // Bem modifiers

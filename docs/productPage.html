@@ -85,19 +85,19 @@
                 <div class="col-6">
                     <div class="product_slider">
                         <div class="product_slide">
-                            <img src="../img/red.jpg" alt="alt" />
+                            <img src="../img/ProductSlider/red.jpg" alt="alt" />
                         </div>
                         <div class="product_slide">
-                            <img src="../img/red2.png" alt="alt" />
+                            <img src="../img/ProductSlider/red2.jpg" alt="alt" />
                         </div>
                         <div class="product_slide">
-                            <img src="../img/red3.png" alt="alt" />
+                            <img src="../img/ProductSlider/red3.jpg" alt="alt" />
                         </div>
                         <div class="product_slide">
-                            <img src="../img/red4.png" alt="alt" />
+                            <img src="../img/ProductSlider/red4.jpg" alt="alt" />
                         </div>
                         <div class="product_slide">
-                            <img src="../img/red5.png" alt="alt" />
+                            <img src="../img/ProductSlider/red5.jpg" alt="alt" />
                         </div>
                     </div>
                 </div>
@@ -162,10 +162,11 @@
                                 <h1 class="product__comment-title">3 COMMENTS ON THIS PRODUCT</h1>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img src="./img/no-image.jpg" alt="alt" />
+                                        <img class="product__admin-pic" src="./img/no-image.jpg" alt="alt" />
                                     </div>
                                     <div class="col-8">
                                         <form class="product__stars" action="#">
+                                            <p class="product__review"></p>
                                             <input class="rating" id="star1" type="radio" name="radio" />
                                             <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
                                             <input class="rating" id="star2" type="radio" name="radio" />
@@ -184,10 +185,11 @@
                                 <hr />
                                 <div class="row">
                                     <div class="col-4">
-                                        <img src="./img/no-image.jpg" alt="alt" />
+                                        <img class="product__admin-pic" src="./img/no-image.jpg" alt="alt" />
                                     </div>
                                     <div class="col-8">
                                         <form class="product__stars" action="#">
+                                            <p class="product__review"></p>
                                             <input class="rating" id="star1" type="radio" name="radio" />
                                             <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
                                             <input class="rating" id="star2" type="radio" name="radio" />
@@ -206,10 +208,11 @@
                                 <hr />
                                 <div class="row">
                                     <div class="col-4">
-                                        <img src="./img/no-image.jpg" alt="alt" />
+                                        <img class="product__admin-pic" src="./img/no-image.jpg" alt="alt" />
                                     </div>
                                     <div class="col-8">
                                         <form class="product__stars" action="#">
+                                            <p class="product__review"></p>
                                             <input class="rating" id="star1" type="radio" name="radio" />
                                             <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
                                             <input class="rating" id="star2" type="radio" name="radio" />
@@ -226,8 +229,7 @@
                                     </div>
                                 </div>
                                 <hr />
-                                <h1 class="product__new-review">ADD A REVIEW</h1>
-                                <p class="product__new-rating">Your rating</p>
+                                <h1 class="product__add-review">ADD A REVIEW</h1>
                                 <form class="product__stars" action="#">
                                     <input class="rating" id="star1" type="radio" name="radio" />
                                     <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
@@ -239,12 +241,13 @@
                                     <label class="star" for="star4"><i class="fas fa-star pointer"></i></label>
                                     <input class="rating" id="star5" type="radio" name="radio" />
                                     <label class="star" for="star5"><i class="fas fa-star pointer"></i></label>
+                                    <p class="product__add-rating">Your rating</p>
                                 </form>
-                                <label class="star" for="comment">Your comment *</label>
-                                <input id="comment" type="text" name="" />
-                                <label class="star" for="name">Name *</label>
+                                <label class="product__add-comment" for="area">Your comment *</label>
+                                <textarea id="area"></textarea>
+                                <label class="product__add-name" for="name">Name *</label>
                                 <input id="name" type="text" name="" />
-                                <label class="email" for="email">Email*</label>
+                                <label class="product__add-email" for="email">Email*</label>
                                 <input id="email" type="email" name="" />
                                 <button class="btn btn-shop" type="submit">Shop Now!</button>
                             </div>
@@ -261,37 +264,37 @@
                 <div class="offer_slider">
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/brownBag.jpg" alt="alt" />
+                            <img src="./img/mansOffer/brownBag.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/mansBlack.jpg" alt="alt" />
+                            <img src="./img/mansOffer/mansBlack.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/mansBlack2.jpg" alt="alt" />
+                            <img src="./img/mansOffer/mansBlack2.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/brownBag.jpg" alt="alt" />
+                            <img src="./img/mansOffer/brownBag.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/mansBlack.jpg" alt="alt" />
+                            <img src="./img/mansOffer/mansBlack.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>
                     <div class="offer_slides">
                         <a href="http://localhost:3000/productPage.html">
-                            <img src="./img/mansBlack2.jpg" alt="alt" />
+                            <img src="./img/mansOffer/mansBlack2.jpg" alt="alt" />
                         </a>
                         <p class="offer_descr">Hot price for outgoing season bags $120.00</p>
                     </div>

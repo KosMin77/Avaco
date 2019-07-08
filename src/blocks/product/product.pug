@@ -68,9 +68,10 @@ mixin product(data = {})
                                 h1.product__comment-title= data.comment
                                 .row
                                     .col-4
-                                        img(src="./img/no-image.jpg", alt="alt")                                    
+                                        img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
                                     .col-8
                                         form.product__stars(action='#')
+                                            p.product__review
                                             input#star1.rating(type='radio' name='radio')
                                             label.star(for='star1')
                                                 i.fas.fa-star.pointer
@@ -91,9 +92,10 @@ mixin product(data = {})
                                 hr
                                 .row
                                     .col-4
-                                        img(src="./img/no-image.jpg", alt="alt")                                    
+                                        img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
                                     .col-8
                                         form.product__stars(action='#')
+                                            p.product__review
                                             input#star1.rating(type='radio' name='radio')
                                             label.star(for='star1')
                                                 i.fas.fa-star.pointer
@@ -114,9 +116,10 @@ mixin product(data = {})
                                 hr
                                 .row
                                     .col-4
-                                        img(src="./img/no-image.jpg", alt="alt")                                    
+                                        img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
                                     .col-8
                                         form.product__stars(action='#')
+                                            p.product__review
                                             input#star1.rating(type='radio' name='radio')
                                             label.star(for='star1')
                                                 i.fas.fa-star.pointer
@@ -135,8 +138,7 @@ mixin product(data = {})
                                         p.product__admin= data.admin
                                         p.product__admin-comment!= data.adminComment
                                 hr
-                                h1.product__new-review= data.addReview
-                                p.product__new-rating= data.rating
+                                h1.product__add-review= data.addReview
                                 form.product__stars(action='#')
                                     input#star1.rating(type='radio' name='radio')
                                     label.star(for='star1')
@@ -153,13 +155,15 @@ mixin product(data = {})
                                     input#star5.rating(type='radio' name='radio')
                                     label.star(for='star5')
                                         i.fas.fa-star.pointer
-                                label.star(for='comment')= data.your
-                                input#comment(type='text' name='')
+                                    p.product__add-rating= data.rating
 
-                                label.star(for='name')= data.name
+                                label.product__add-comment(for='area')= data.your
+                                textarea#area
+
+                                label.product__add-name(for='name')= data.name
                                 input#name(type="text", name="")
 
-                                label.email(for='email')= data.email
+                                label.product__add-email(for='email')= data.email
                                 input#email(type="email", name="")
                                 button.btn.btn-shop(type='submit') Shop Now!
                                         

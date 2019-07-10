@@ -37,7 +37,7 @@
  */
 function initBlock() {
     // TODO: add code here
-      $(".nav_links").click(function() {
+      $(".navigation__links").click(function() {
          $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top - 110
          }, {

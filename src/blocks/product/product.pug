@@ -10,15 +10,13 @@ mixin product(data = {})
             ul.product__breadcrumb
                 each item in data.breadcrumb
                     li.breadcrumb__list: a.breadcrumb__links(href="#")= item
-            
-                
             .row
-                .col-6
+                .col-md-6.col-sm-12
                     .product_slider
                          each item in data.slider
                             .product_slide
                                 img(src=item, alt="alt")               
-                .col-6
+                .col-md-6.col-sm-12
                     .product__info
                         h1.product__name= data.productName
                         p.product__code= data.code
@@ -48,98 +46,102 @@ mixin product(data = {})
                         button.btn.btn__red(type='submit') 
                         
                         P.product__social__title= data.social 
+                        hr.product__line
                         ul.product__social 
                             each item in data.socialIcon
-                                li.product__social_link: a.footer__social_link_item(href="#")
+                                li.product__social_link: a.product__social_link_item(href="#")
                                     i(class=`fab fa-${item}`)
-                    .product__tabs
-                        span.product__tab
-                            p.product__tabs-name= data.specif
-                        span.product__tab
-                            p.product__tabs-name= data.addInfo
-                        span.product__tab
-                            p.product__tabs-name= data.review
-
-                    .product__comments
-                        .product__tab__content
-                            .tab_item
-                            .tab_item
-                            .tab_item
-                                h1.product__comment-title= data.comment
-                                .row
-                                    .col-4
-                                        img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
-                                    .col-8
-                                        form.product__stars(action='#')
-                                            p.product__review
-                                            input#star1.rating(type='radio' name='radio')
-                                            label.star(for='star1')
-                                                i.fas.fa-star.pointer
-                                            input#star2.rating(type='radio' name='radio')
-                                            label.star(for='star2')
-                                                i.fas.fa-star.pointer
-                                            input#star3.rating(type='radio' name='radio')
-                                            label.star(for='star3')
-                                                i.fas.fa-star.pointer
-                                            input#star4.rating(type='radio' name='radio' checked='')
-                                            label.star(for='star4')
-                                                i.fas.fa-star.pointer
-                                            input#star5.rating(type='radio' name='radio')
-                                            label.star(for='star5')
-                                                i.fas.fa-star.pointer
-                                        p.product__admin= data.admin
-                                        p.product__admin-comment!= data.adminComment
-                                hr
-                                .row
-                                    .col-4
-                                        img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
-                                    .col-8
-                                        form.product__stars(action='#')
-                                            p.product__review
-                                            input#star1.rating(type='radio' name='radio')
-                                            label.star(for='star1')
-                                                i.fas.fa-star.pointer
-                                            input#star2.rating(type='radio' name='radio')
-                                            label.star(for='star2')
-                                                i.fas.fa-star.pointer
-                                            input#star3.rating(type='radio' name='radio')
-                                            label.star(for='star3')
-                                                i.fas.fa-star.pointer
-                                            input#star4.rating(type='radio' name='radio' checked='')
-                                            label.star(for='star4')
-                                                i.fas.fa-star.pointer
-                                            input#star5.rating(type='radio' name='radio')
-                                            label.star(for='star5')
-                                                i.fas.fa-star.pointer
-                                        p.product__admin= data.admin
-                                        p.product__admin-comment!= data.adminComment
-                                hr
-                                .row
-                                    .col-4
-                                        img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
-                                    .col-8
-                                        form.product__stars(action='#')
-                                            p.product__review
-                                            input#star1.rating(type='radio' name='radio')
-                                            label.star(for='star1')
-                                                i.fas.fa-star.pointer
-                                            input#star2.rating(type='radio' name='radio')
-                                            label.star(for='star2')
-                                                i.fas.fa-star.pointer
-                                            input#star3.rating(type='radio' name='radio')
-                                            label.star(for='star3')
-                                                i.fas.fa-star.pointer
-                                            input#star4.rating(type='radio' name='radio' checked='')
-                                            label.star(for='star4')
-                                                i.fas.fa-star.pointer
-                                            input#star5.rating(type='radio' name='radio')
-                                            label.star(for='star5')
-                                                i.fas.fa-star.pointer
-                                        p.product__admin= data.admin
-                                        p.product__admin-comment!= data.adminComment
-                                hr
+                
+                        .wrapper
+                            .product__tabs-title
+                                .product__tabs
+                                    span.col-sm-4.product__tab
+                                        p.product__tabs-name= data.specif
+                                    span.col-sm-4.product__tab
+                                        p.product__tabs-name= data.addInfo
+                                    span.col-sm-4.product__tab
+                                        p.product__tabs-name= data.review
+                            section.main
+                                .tab_content
+                                    .tab_item
+                                    .tab_item
+                                    .tab_item
+                                        h1.product__comment-title= data.comment
+                                        .row
+                                            .col-4
+                                                img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
+                                            .col-8
+                                                form.product__stars(action='#')
+                                                    p.product__review
+                                                    input#first.rate(type='radio' name='radio')
+                                                    label.star(for='first')
+                                                        i.fas.fa-star.pointer
+                                                    input#second.rate(type='radio' name='radio')
+                                                    label.star(for='second')
+                                                        i.fas.fa-star.pointer
+                                                    input#third.rate(type='radio' name='radio')
+                                                    label.star(for='third')
+                                                        i.fas.fa-star.pointer
+                                                    input#fourth.rate(type='radio' name='radio' checked='')
+                                                    label.star(for='fourth')
+                                                        i.fas.fa-star.pointer
+                                                    input#fifth.rate(type='radio' name='radio')
+                                                    label.star(for='fifth')
+                                                        i.fas.fa-star.pointer
+                                                p.product__admin= data.admin
+                                                p.product__admin-comment!= data.adminComment
+                                        hr.product__line
+                                        .row
+                                            .col-4
+                                                img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
+                                            .col-8
+                                                form.product__stars(action='#')
+                                                    p.product__review
+                                                    input#first.rate(type='radio' name='radio')
+                                                    label.star(for='first')
+                                                        i.fas.fa-star.pointer
+                                                    input#second.rate(type='radio' name='radio')
+                                                    label.star(for='second')
+                                                        i.fas.fa-star.pointer
+                                                    input#third.rate(type='radio' name='radio')
+                                                    label.star(for='third')
+                                                        i.fas.fa-star.pointer
+                                                    input#fourth.rate(type='radio' name='radio' checked='')
+                                                    label.star(for='fourth')
+                                                        i.fas.fa-star.pointer
+                                                    input#fifth.rate(type='radio' name='radio')
+                                                    label.star(for='fifth')
+                                                        i.fas.fa-star.pointer
+                                                p.product__admin= data.admin
+                                                p.product__admin-comment!= data.adminComment
+                                        hr.product__line
+                                        .row
+                                            .col-4
+                                                img.product__admin-pic(src="./img/no-image.jpg", alt="alt")                                    
+                                            .col-8
+                                                form.product__stars(action='#')
+                                                    p.product__review
+                                                    input#first.rate(type='radio' name='radio')
+                                                    label.star(for='first')
+                                                        i.fas.fa-star.pointer
+                                                    input#second.rate(type='radio' name='radio')
+                                                    label.star(for='second')
+                                                        i.fas.fa-star.pointer
+                                                    input#third.rate(type='radio' name='radio')
+                                                    label.star(for='third')
+                                                        i.fas.fa-star.pointer
+                                                    input#fourth.rate(type='radio' name='radio' checked='')
+                                                    label.star(for='fourth')
+                                                        i.fas.fa-star.pointer
+                                                    input#fifth.rate(type='radio' name='radio')
+                                                    label.star(for='fifth')
+                                                        i.fas.fa-star.pointer
+                                                p.product__admin= data.admin
+                                                p.product__admin-comment!= data.adminComment
+                                hr.product__line
                                 h1.product__add-review= data.addReview
-                                form.product__stars(action='#')
+                                form.product__star(action='#')
+                                    p.product__add-rating= data.rating
                                     input#star1.rating(type='radio' name='radio')
                                     label.star(for='star1')
                                         i.fas.fa-star.pointer
@@ -155,16 +157,15 @@ mixin product(data = {})
                                     input#star5.rating(type='radio' name='radio')
                                     label.star(for='star5')
                                         i.fas.fa-star.pointer
-                                    p.product__add-rating= data.rating
 
                                 label.product__add-comment(for='area')= data.your
-                                textarea#area
-
+                                textarea#area.product__area
+                                
                                 label.product__add-name(for='name')= data.name
                                 input#name(type="text", name="")
 
                                 label.product__add-email(for='email')= data.email
                                 input#email(type="email", name="")
-                                button.btn.btn-shop(type='submit') Shop Now!
+                                button.btn.product__shop(type='submit') Shop Now!
                                         
                         

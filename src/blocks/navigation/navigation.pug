@@ -9,15 +9,15 @@ mixin navigation(data = {})
         #nav
             .container
                 .row
-                    .col-2.nav_logo
+                    .col-md-2.col-sm-4.navigation__logo
                         a(href="#") 
                             img(src="./img/logo.png", alt="alt")
-                    .col-7.nav_menu
-                        ul.nav_list
+                    .col-md-7.col-sm-4.navigation__menu
+                        ul.navigation__list
                             each item in data.menu
-                                li: a.nav_links(href=item.link)= item.text
-                    .col-3
-                        ul.nav_icons
+                                li: a.navigation__links(href=item.link)= item.text
+                    .col-md-3.col-sm-4
+                        ul.navigation__items
                             each item in data.icons
                                 li: a.navigation__icons(href="#")
                                     i(class=`fas fa-${item}`)

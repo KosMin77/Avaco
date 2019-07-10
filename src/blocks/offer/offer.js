@@ -35,17 +35,10 @@
  */
 function initBlock() {
     // TODO: add code here
-    // $('.slider-for').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     fade: true,
-    //     asNavFor: '.offer_slider'
-    //   });
+    
       $('.offer_slider').slick({
         slidesToShow: 3,
-        slidesToScroll: 1,
-        // asNavFor: '.slider-for',
+        slidesToScroll: 3,
         dots: true,
         loop: true,
         infinite: true,

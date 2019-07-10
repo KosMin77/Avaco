@@ -33,23 +33,23 @@
  * @return true if the block is present on the page, false otherwise
  */
 function initBlock() {
-    // TODO: add code here
-    // $('.product_slider').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     fade: true,
-    //     asNavFor: '.product_slide'
-    //   });
-      $('.product_slide').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // asNavFor: '.product_slider',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true
-      });
-    return true;
+  // TODO: add code here
+  
+  $('.product_slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+
+  $(".tab_item").not(":first").hide();
+  $(".wrapper .product__tab").click(function() {
+	  $(".wrapper .product__tab").removeClass("active").eq($(this).index()).addClass("active");
+	  $(".tab_item").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("active");
+  return true;
 }
 
 // ---------------------------- END PUBLIC METHODS ----------------------------

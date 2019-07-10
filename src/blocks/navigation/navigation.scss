@@ -9,8 +9,20 @@
     z-index: 1;
     background-color: white;
     border-bottom: 2px solid gray;
+    
 
-    .nav_links{
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+    &__links{
         text-decoration: none;
         color: black;
         font-weight: 600;
@@ -24,24 +36,22 @@
             transition: .3s;
         }
     }
-    .nav_logo{
-        display: flex;
-        justify-content: center;
+    &__logo{
         margin-top: 12px;
     }
 
-    .nav_menu{
+    &__menu{
         display: flex;
         justify-content: center;
         margin-top: 10px;
     }
-    .nav_list{
+    &__list{
         display: flex;
     }
 
-    .nav_icons{
+    &__items{
         display: flex;
-        margin-top: 13px;
+        // margin-top: 13px;
     }
 
     .btn-nav{
@@ -65,19 +75,25 @@
         margin-right: 30px;
         line-height: 67px;
     }
-
-    // @media queries
-    // TODO: add code
-
-    // Pseudo-classes and pseudo-elements
-    // TODO: add code
-
-    // Nested selectors
-    // TODO: add code
-
-    // BEM elements
-    // TODO: add code
-
+    .menu-btn {
+        font-weight: 600;
+        height: 20px;
+        margin-right: 30px;
+    }
+    span {
+        text-align: center;
+        width: 17px;
+        height: 5px;
+        background-color: black;
+        
+    }
+    .second_line{
+        margin-top: 5px;
+    }
+    .third_line {
+        margin-top: 10px;
+        z-index: 100;
+    }
     // Bem modifiers
     // TODO: add code
 }

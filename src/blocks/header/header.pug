@@ -8,14 +8,15 @@ mixin header(data = {})
     .header&attributes(attributes)
         .container
             .row
-                .col-12.header_main
-                    .col-6
-                        p.subtitle= data.subtitle
-                        h1.title= data.title
-                        p.descr= data.descr
-                        button.btn.btn-shop(type='submit') Shop Now!
+                .header__main
+                    .col-md-6.col-sm-12
+                        p.header__subtitle= data.subtitle
+                        h1.header__title= data.title
+                        hr.header__line
+                        p.header__descr= data.descr
+                        button.btn.header__shop(type='submit') Shop Now!
                             i(class="fas.fa-shopping-cart")
-                        button.btn.btn-phone(type='submit')
+                        button.btn.header__phone(type='submit')
                             i(class="fas.fa-phone-alt")
                             p.phone= data.phone
-                    .col-6
+                    .col-md-6.col-sm-12

@@ -8,7 +8,73 @@
     max-width: 100%;
     height: 620px;
     
-    .title{
+    
+    // @media queries
+    // TODO: add code
+    @media (max-width: 768px) {
+        .publicity {
+            &__wrapp{
+                margin-top: -50px;
+            }
+            &__title {
+                text-align: center;
+                font-family: 'Fredericka the Great';
+                font-size: 34px;
+                font-weight: 500;
+                max-width: 380px;
+                text-transform: uppercase;
+                line-height: 34px;
+                margin-left: -25px;
+            }
+            &__subtitle {
+                text-align: center;                
+                max-width: 300px;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 25px 10px 25px 10px;
+            }
+
+            &__shop {
+                display: inline-block;
+                // margin-left: 70px;
+                font-size: 14px;
+                padding: 10px 25px;
+                border-radius: 12px;
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+            &__shop:before {
+                display: none;
+            }
+            &__phone {
+                display: inline-block;
+                font-size: 14px;
+                padding: 15px 20px;
+                border-radius: 12px;
+                margin-right: 10px;
+                background-color: transparent;
+                color: black;
+                font-family: 'Archivo';
+                font-weight: 600;
+                letter-spacing: 0.1em;
+                outline: none;
+                border: 2px solid #161b2b;
+            }
+        }
+    }
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+    &__main {
+        width: 100%;
+    }
+    &__title{
         color: #161b2b;
         font-size: 48px;
         font-weight: 400;
@@ -17,7 +83,7 @@
         width: 700px;
         margin-top: 150px;
     }
-    .subtitle{
+    &__subtitle{
         color: #4e4d55;
         font-family: 'Roboto';
         font-size: 18px;
@@ -26,7 +92,7 @@
         width: 680px;
         margin-top: 20px;
     }
-    .btn-shop{
+    &__shop{
         background-color: black;
         color: white;
         font-family: 'Archivo';
@@ -42,7 +108,7 @@
         overflow: hidden;
 
     }
-    .btn-shop:before {
+    &__shop:before {
         font-family: 'Font Awesome 5 free';
         content:"\f07a";
         color: transparent;
@@ -51,22 +117,14 @@
         left: -30px;
         transition: all 900ms ease;
     }
-    .btn-shop:hover:before {
+    &__shop:hover:before {
         left: 160px;
         color: white;
     }
-    // @media queries
-    // TODO: add code
 
-    // Pseudo-classes and pseudo-elements
-    // TODO: add code
-
-    // Nested selectors
-    // TODO: add code
-
-    // BEM elements
-    // TODO: add code
-
+    &__phone{
+        display: none;
+    }
     // Bem modifiers
     // TODO: add code
 }

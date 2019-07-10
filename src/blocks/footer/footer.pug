@@ -8,32 +8,32 @@ mixin footer(data = {})
     .footer&attributes(attributes)
         .container-fluid
             .row
-                .col-3.footer_block_wrapp
+                .col-md-3.col-sm-3.footer_block_wrapp
                     h3.footer_chapter= data.delivery
                     p.footer_descr= data.descr
-                .col-3.footer_block_wrapp
+                .col-md-3.col-sm-3.footer_block_wrapp
                     h3.footer_chapter= data.prices
                     p.footer_descr= data.descr
-                .col-3.footer_block_wrapp
+                .col-md-3.col-sm-3.footer_block_wrapp
                     h3.footer_chapter= data.assortment
                     p.footer_descr= data.descr
-                .col-3.footer_block_wrapp
+                .col-md-3.col-sm-3.footer_block_wrapp
                     h3.footer_chapter= data.discounts
                     p.footer_descr= data.descr
         .container
-        .footer_contacts
+        .footer__contacts
             .row
-                .col-2
-                .col-8
-                    h1.title= data.title
-                    p.subtitle!= data.subtitle
-                    .footer_call
+                .col-md-2
+                .col-md-8.col-sm-12
+                    h1.footer__title= data.title
+                    p.footer__subtitle!= data.subtitle
+                    .footer__call
                         a(href="tel:+800.123.45.67").call= data.call
                         a(href="tel:+800.123.45.67").number= data.number
-                    input.email(type="search" placeholder="Your mail")
-                    button.btn.btn_subscribe(type='submit') Subscribe
-                    ul.footer_social
+                    input.footer__email(type="search" placeholder="Your mail")
+                    button.btn.footer__subscribe(type='submit') Subscribe
+                    ul.footer__social
                         each item in data.icon
-                            li.footer_social_link: a(href="#")
+                            li.footer__social_link: a(href="#")
                                 i(class=`fab fa-${item}`)
-                .col-2
+                .col-md-2

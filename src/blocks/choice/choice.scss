@@ -8,6 +8,18 @@
 
     // @media queries
     // TODO: add code
+    @media (max-width: 768px) {
+        .choice {
+            &__panel {
+                margin-bottom: 25px;
+            }
+            &__for{
+                margin-left: -10px;
+                font-size: 32px;
+                margin-top: 10px;
+            }
+        }
+    }
 
     // Pseudo-classes aSnd pseudo-elements
     // TODO: add code

@@ -7,6 +7,104 @@
 
     // @media queries
     // TODO: add code
+    @media (max-width: 768px) {
+        .product {
+
+            &__breadcrumb{
+                display: none;
+            }
+
+            &__info {
+                margin-left: 10px;
+            }
+
+            &__descr{
+                width: 320px;
+                text-align: justify;
+                margin-top: 15px;
+            }
+
+            &__name {
+                font-size: 24px;
+                margin-top: 35px;
+                text-align: center;
+            }
+
+            &__code{
+                text-align: right;
+                margin-top: 20px;
+            }
+            &__social__title {
+                text-align: center;
+                margin-top: 50px;
+            }
+            &__social {
+                justify-content: space-around;
+                margin-top: 15px;
+            }
+            &__line {
+                display: block;
+                margin-left: 60px;
+                width: 200px;
+            }
+            &__tabs {
+                margin-left: -25px;
+                background-color: lightgray;
+            }
+            &__tabs-name{
+                width: 80px;
+            }
+            &__comment-title {
+                font-size: 18px;
+            }
+            &__admin-pic {
+                margin-left: 5px;
+            }
+            &__admin {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            &__line {
+                margin-left: 0;
+                width: 400px;
+            }
+            &__add-review, &__add-comment, &__add-name, &__add-email {
+                margin-left: 0;
+            }
+            &__stars {
+                margin-left: -50px;
+            }
+            &__star {
+                margin-left: -60px;
+                display: flex;
+            }
+            &__shop {
+                display: inline-block;
+                font-size: 14px;
+                padding: 10px 25px;
+                border-radius: 12px;
+                margin-right: 20px;
+                margin-left: 110px;
+            }   
+            &__add-rating{
+                margin-right: 20px;
+                margin-left: 60px;
+            }
+
+            #area{
+                height: 200px;
+                width: 325px;
+                font-size: 16px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+                margin-left: -80px;
+            }
+
+
+            
+
+        }
+    }
 
     // Pseudo-classes and pseudo-elements
     // TODO: add code
@@ -21,6 +119,9 @@
         font-size: 14px;
         font-weight: 400;
         color: #414243;
+    }
+    &__line {
+        display: none;
     }
 
     &__nav {
@@ -69,7 +170,7 @@
         font-size: 28px;
     }
 
-    &__stars {
+    &__stars, &__stars {
         margin-left: -51px;
         width: 436px;
         font-size: 18px;
@@ -97,7 +198,7 @@
     }
     }
 
-    .rating {
+    .rate, .rating {
     display: none;
     &:checked ~ label i {
         color: gold;
@@ -170,7 +271,6 @@
         display: flex;
         justify-content: space-between;
         margin-left: 50px;
-        border-bottom: 1px solid gray;
     }
 
     &__comment-title{
@@ -213,16 +313,11 @@
 
     &__tab{
         text-align: center;
-        color: #b7bacd;
         cursor: pointer;
     }
     .tab:hover{
-        color: white;
-    }
-    
-    .tabs-icon{
-        text-align: center;
-        color: #b7bacd
+        color: red;
+        font-weight: 600;
     }
     
     #area {
@@ -243,7 +338,7 @@
     }
     
 
-    .btn-shop{
+    &__shop{
         background-color: black;
         color: white;
         font-family: 'Archivo';

@@ -54,7 +54,7 @@
         "productName": "ROCKSTUD SPIKE BAG",
         "price": "340 $",
         "reviewLabel": "(24 reviews)",
-        "descr": "Small Rockstud Spike chain bag by Valentino Garavani made from soft sheep's nappa leather. Quilted model is decorated with small rivets. The bag can be worn on the shoulder, across the chest or in the hand thanks to a removable handle and a detachable movable chain. <br>- Quilted lamb skin.<br>- Rivets and metal accessories.<br>- Valve with lock turntable.<br>- Nappa leather lining.<br>- Dimensions: 20 (W) x 11.5 (H) x 5 (D) cm.",
+        "descr": "Small Rockstud Spike chain bag by Valentino Garavani made from soft sheep's nappa leather. Quilted model is decorated with small rivets. The bag can be worn on the shoulder, across the chest or in the hand thanks to a removable handle and a detachable movable chain. <br><br>- Quilted lamb skin.<br>- Rivets and metal accessories.<br>- Valve with lock turntable.<br>- Nappa leather lining.<br>- Dimensions: 20 (W) x 11.5 (H) x 5 (D) cm.",
         "category": "Categories: BAGS / CLOTCHES, GIFTS, VALENTINO,",
         "color": "Color of product:",
         "like": "TO FAVORITES",
@@ -65,17 +65,17 @@
         "comment": "3 COMMENTS ON THIS PRODUCT",
         "admin": "admin – October 17, 2018",
         "addReview": "ADD A REVIEW",
-        "rating": "Your rating",
+        "rating": "Your rating: ",
         "adminComment": "Dolor sit amet conse ctetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna.",
         "your": "Your comment *",
         "name": "Name *",
         "email": "Email*",   
         "slider": [
-            "../img/ProductSlider/red.jpg",
-            "../img/ProductSlider/red2.jpg",
-            "../img/ProductSlider/red3.jpg",
-            "../img/ProductSlider/red4.jpg",
-            "../img/ProductSlider/red5.jpg"
+            "../img/red.jpg",
+            "../img/red2.jpg",
+            "../img/red3.jpg",
+            "../img/red4.jpg",
+            "../img/red5.jpg"
         ],
         "breadcrumb": [
             "HOME",

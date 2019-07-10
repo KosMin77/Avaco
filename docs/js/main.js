@@ -98,9 +98,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_utils_lazy_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../js/utils/lazy-loader */ "./src/js/utils/lazy-loader.js");
 /* harmony import */ var _offer_offer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../offer/offer */ "./src/blocks/offer/offer.js");
 /* harmony import */ var _navigation_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../navigation/navigation */ "./src/blocks/navigation/navigation.js");
+/* harmony import */ var _product_product__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../product/product */ "./src/blocks/product/product.js");
 /**
  * @file Implementation of the page block
  */
+
 
 
  // TODO: import other blocks
@@ -176,7 +178,8 @@ function initBlock() {
   _js_utils_lazy_loader__WEBPACK_IMPORTED_MODULE_0__["default"].init(); // TODO: initialize other blocks
 
   _offer_offer__WEBPACK_IMPORTED_MODULE_1__["default"].initBlock();
-  _navigation_navigation__WEBPACK_IMPORTED_MODULE_2__["default"].initBlock(); // Process the initial window size and scroll position
+  _navigation_navigation__WEBPACK_IMPORTED_MODULE_2__["default"].initBlock();
+  _product_product__WEBPACK_IMPORTED_MODULE_3__["default"].initBlock(); // Process the initial window size and scroll position
 
   handleWindowResize();
   handleWindowScroll();
@@ -223,7 +226,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 function initBlock() {
   // TODO: add code here
-  $(".nav_links").click(function () {
+  $(".navigation__links").click(function () {
     $("html, body").animate({
       scrollTop: $($(this).attr("href")).offset().top - 110
     }, {
@@ -274,17 +277,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 function initBlock() {
   // TODO: add code here
-  // $('.slider-for').slick({
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     arrows: false,
-  //     fade: true,
-  //     asNavFor: '.offer_slider'
-  //   });
   $('.offer_slider').slick({
     slidesToShow: 3,
-    slidesToScroll: 1,
-    // asNavFor: '.slider-for',
+    slidesToScroll: 3,
     dots: true,
     loop: true,
     infinite: true,
@@ -292,6 +287,61 @@ function initBlock() {
     focusOnSelect: true,
     arrows: false
   });
+  return true;
+} // ---------------------------- END PUBLIC METHODS ----------------------------
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  initBlock: initBlock
+});
+
+/***/ }),
+
+/***/ "./src/blocks/product/product.js":
+/*!***************************************!*\
+  !*** ./src/blocks/product/product.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * @file Implementation of the product block
+ */
+// -------------------------- BEGIN MODULE VARIABLES --------------------------
+// TODO: add code here
+// --------------------------- END MODULE VARIABLES ---------------------------
+// -------------------------- BEGIN UTILITY FUNCTIONS -------------------------
+// TODO: add code here
+// --------------------------- END UTILITY FUNCTIONS --------------------------
+// ----------------------------- BEGIN DOM METHODS ----------------------------
+// TODO: add code here
+// ------------------------------ END DOM METHODS -----------------------------
+// --------------------------- BEGIN EVENT HANDLERS ---------------------------
+// TODO: add code here
+// ---------------------------- END EVENT HANDLERS ----------------------------
+// --------------------------- BEGIN PUBLIC METHODS ---------------------------
+
+/**
+ * Initialize the product block.
+ * @return true if the block is present on the page, false otherwise
+ */
+function initBlock() {
+  // TODO: add code here
+  $('.product_slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+  $(".tab_item").not(":first").hide();
+  $(".wrapper .product__tab").click(function () {
+    $(".wrapper .product__tab").removeClass("active").eq($(this).index()).addClass("active");
+    $(".tab_item").hide().eq($(this).index()).fadeIn();
+  }).eq(0).addClass("active");
   return true;
 } // ---------------------------- END PUBLIC METHODS ----------------------------
 

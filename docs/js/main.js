@@ -235,6 +235,18 @@ function initBlock() {
     });
     return false;
   });
+  $(document).ready(function () {
+    $('.menu-trigger').click(function () {
+      $(' .navigation__menu ul').slideToggle(500);
+    }); //end slide toggle
+
+    $(window).resize(function () {
+      if ($(window).width() > 768) {
+        $('nav ul').removeAttr('style');
+      }
+    }); //end resize
+  }); //end ready
+
   return true;
 } // ---------------------------- END PUBLIC METHODS ----------------------------
 
@@ -277,15 +289,28 @@ __webpack_require__.r(__webpack_exports__);
  */
 function initBlock() {
   // TODO: add code here
-  $('.offer_slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true,
-    loop: true,
-    infinite: true,
-    centerMode: true,
-    focusOnSelect: true,
-    arrows: false
+  $(document).ready(function () {
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      $('.offer_slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    } else {
+      $('.offer_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        loop: true,
+        infinite: true,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: false
+      });
+    }
   });
   return true;
 } // ---------------------------- END PUBLIC METHODS ----------------------------

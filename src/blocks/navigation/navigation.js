@@ -47,6 +47,18 @@ function initBlock() {
          return false;
       });
 
+      $(document).ready(function() {
+         $('.menu-trigger').click(function() {
+           $(' .navigation__menu ul').slideToggle(500);
+         });//end slide toggle
+         
+         $(window).resize(function() {		
+             if (  $(window).width() > 768 ) {			
+                $('nav ul').removeAttr('style');
+              }
+          });//end resize
+       });//end ready
+
     return true;
 }
 

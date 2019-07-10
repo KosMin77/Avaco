@@ -90,3 +90,9 @@ img {
     box-shadow: 7px 7px 14px -6px rgba(0,0,0,0.54);
     transition: .3s;
 }
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

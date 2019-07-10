@@ -36,16 +36,31 @@
 function initBlock() {
     // TODO: add code here
     
-      $('.offer_slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true,
-        loop: true,
-        infinite: true,
-        centerMode: true,
-        focusOnSelect: true,
-        arrows: false,
-      });
+    $(document).ready(function () {
+
+      if(window.matchMedia('(max-width: 768px)').matches){
+        $('.offer_slider').slick({
+          dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear'
+        });
+      } else {
+        $('.offer_slider').slick({
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+          loop: true,
+          infinite: true,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: false,
+        });
+      }
+     });
+     
     return true;
 }
 

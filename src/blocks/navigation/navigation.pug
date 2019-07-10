@@ -9,14 +9,15 @@ mixin navigation(data = {})
         #nav
             .container
                 .row
-                    .col-md-2.col-sm-4.navigation__logo
+                    .col-md-2.col-sm-3.navigation__logo
                         a(href="#") 
                             img(src="./img/logo.png", alt="alt")
                     .col-md-7.col-sm-4.navigation__menu
+                        button.btn.menu-trigger(type='submit') MENU
                         ul.navigation__list
                             each item in data.menu
                                 li: a.navigation__links(href=item.link)= item.text
-                    .col-md-3.col-sm-4
+                    .col-md-3.col-sm-3.navigation_social
                         ul.navigation__items
                             each item in data.icons
                                 li: a.navigation__icons(href="#")

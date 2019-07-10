@@ -17,6 +17,12 @@
                 font-weight: 400;
                 margin: 20px 0;
             }
+            &_descr {
+                text-align: center;
+                width: 100%;
+                padding-top: 15px;
+            }
+
         }
     }
     
@@ -62,7 +68,7 @@
     .slick-dots{
         display: flex;
         justify-content: center;
-
+        margin-top: 15px;
     }
     // Bem modifiers
     // TODO: add code

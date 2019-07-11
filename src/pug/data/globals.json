@@ -3,7 +3,7 @@
     "navigation": {
         "title": "./img/logo.png",
         "menu": [
-            {"link": "Avaco/index.html", "text": "Home"},
+            {"link": "./index.html", "text": "Home"},
             {"link": "#woman",       "text": "Woman"},
             {"link": "#man",         "text": "Man"},
             {"link": "#collection",  "text": "Collection"},
@@ -39,11 +39,11 @@
         "discounts": "Favorable Discounts",
         "descr": "Hot offer click and go to the link",
         "icon": [
-            "facebook-f",
-            "instagram",
-            "linkedin-in",
-            "youtube",
-            "twitter"
+            {"link": "https://www.facebook.com/",         "text": "facebook-f"},
+            {"link": "https://www.instagram.com/",        "text": "instagram"},
+            {"link": "https://www.linkedin.com/m/login/", "text": "linkedin-in"},
+            {"link": "https://www.youtube.com",           "text": "youtube"},
+            {"link": "https://twitter.com/",              "text": "twitter"}
         ]
     },
     "copyrights": {

@@ -153,6 +153,13 @@
         font-weight: 600;
         color: deepskyblue;
     }
+    .breadcrumb__list:nth-child(6){
+        pointer-events: none;
+        cursor: default; 
+    }
+    .breadcrumb__list:nth-child(6)::after {
+        content: none;
+    }
 
     &__info {
         margin-left: 50px;
@@ -353,7 +360,7 @@
 
     }
     &__shop:before {
-        font-family: 'FontAwesome';
+        font-family: 'Font Awesome 5 free';
         content: "\f07a";
         color: white;
         position: absolute;

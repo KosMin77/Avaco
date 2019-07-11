@@ -15,6 +15,10 @@ mixin product(data = {})
                     .product_slider
                          each item in data.slider
                             .product_slide
+                                img(src=item, alt="alt") 
+                    .product_nav
+                         each item in data.slider
+                            .product_slide
                                 img(src=item, alt="alt")               
                 .col-md-6.col-sm-12
                     .product__info
@@ -73,19 +77,19 @@ mixin product(data = {})
                                         .col-8
                                             form.product__stars(action='#')
                                                 p.product__review
-                                                input#first.rate(type='radio' name='radio')
+                                                input#first.rate(type='radio' name='radio1')
                                                 label.star(for='first')
                                                     i.fas.fa-star.pointer
-                                                input#second.rate(type='radio' name='radio')
+                                                input#second.rate(type='radio' name='radio1')
                                                 label.star(for='second')
                                                     i.fas.fa-star.pointer
-                                                input#third.rate(type='radio' name='radio')
+                                                input#third.rate(type='radio' name='radio1')
                                                 label.star(for='third')
                                                     i.fas.fa-star.pointer
-                                                input#fourth.rate(type='radio' name='radio' checked='')
+                                                input#fourth.rate(type='radio' name='radio1' checked='')
                                                 label.star(for='fourth')
                                                     i.fas.fa-star.pointer
-                                                input#fifth.rate(type='radio' name='radio')
+                                                input#fifth.rate(type='radio' name='radio1')
                                                 label.star(for='fifth')
                                                     i.fas.fa-star.pointer
                                             p.product__admin= data.admin
@@ -97,19 +101,19 @@ mixin product(data = {})
                                         .col-8
                                             form.product__stars(action='#')
                                                 p.product__review
-                                                input#first.rate(type='radio' name='radio')
+                                                input#first.rate(type='radio' name='radio2')
                                                 label.star(for='first')
                                                     i.fas.fa-star.pointer
-                                                input#second.rate(type='radio' name='radio')
+                                                input#second.rate(type='radio' name='radio2')
                                                 label.star(for='second')
                                                     i.fas.fa-star.pointer
-                                                input#third.rate(type='radio' name='radio')
+                                                input#third.rate(type='radio' name='radio2')
                                                 label.star(for='third')
                                                     i.fas.fa-star.pointer
-                                                input#fourth.rate(type='radio' name='radio' checked='')
+                                                input#fourth.rate(type='radio' name='radio2' checked='')
                                                 label.star(for='fourth')
                                                     i.fas.fa-star.pointer
-                                                input#fifth.rate(type='radio' name='radio')
+                                                input#fifth.rate(type='radio' name='radio2')
                                                 label.star(for='fifth')
                                                     i.fas.fa-star.pointer
                                             p.product__admin= data.admin
@@ -121,19 +125,19 @@ mixin product(data = {})
                                         .col-8
                                             form.product__stars(action='#')
                                                 p.product__review
-                                                input#first.rate(type='radio' name='radio')
+                                                input#first.rate(type='radio' name='radio3')
                                                 label.star(for='first')
                                                     i.fas.fa-star.pointer
-                                                input#second.rate(type='radio' name='radio')
+                                                input#second.rate(type='radio' name='radio3')
                                                 label.star(for='second')
                                                     i.fas.fa-star.pointer
-                                                input#third.rate(type='radio' name='radio')
+                                                input#third.rate(type='radio' name='radio3')
                                                 label.star(for='third')
                                                     i.fas.fa-star.pointer
-                                                input#fourth.rate(type='radio' name='radio' checked='')
+                                                input#fourth.rate(type='radio' name='radio3' checked='')
                                                 label.star(for='fourth')
                                                     i.fas.fa-star.pointer
-                                                input#fifth.rate(type='radio' name='radio')
+                                                input#fifth.rate(type='radio' name='radio3')
                                                 label.star(for='fifth')
                                                     i.fas.fa-star.pointer
                                             p.product__admin= data.admin
@@ -141,19 +145,19 @@ mixin product(data = {})
                             hr.product__line
                             h1.product__add-review= data.addReview
                             form.product__star(action='#')
-                                input#star1.rating(type='radio' name='radio')
+                                input#star1.rating(type='radio' name='radio4')
                                 label.star(for='star1')
                                     i.fas.fa-star.pointer
-                                input#star2.rating(type='radio' name='radio')
+                                input#star2.rating(type='radio' name='radio4')
                                 label.star(for='star2')
                                     i.fas.fa-star.pointer
-                                input#star3.rating(type='radio' name='radio')
+                                input#star3.rating(type='radio' name='radio4')
                                 label.star(for='star3')
                                     i.fas.fa-star.pointer
-                                input#star4.rating(type='radio' name='radio' checked='')
+                                input#star4.rating(type='radio' name='radio4' checked='')
                                 label.star(for='star4')
                                     i.fas.fa-star.pointer
-                                input#star5.rating(type='radio' name='radio')
+                                input#star5.rating(type='radio' name='radio4')
                                 label.star(for='star5')
                                     i.fas.fa-star.pointer
                                 p.product__add-rating= data.rating

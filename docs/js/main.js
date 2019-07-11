@@ -354,19 +354,19 @@ __webpack_require__.r(__webpack_exports__);
  */
 function initBlock() {
   // TODO: add code here
-  $('.slider-for').slick({
+  $('.product_slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.product_nav'
   });
-  $('.slider-nav').slick({
-    slidesToShow: 3,
+  $('.product_nav').slick({
+    slidesToShow: 4,
+    arrows: false,
+    dots: false,
     slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: true,
-    centerMode: true,
+    asNavFor: '.product_slider',
     focusOnSelect: true
   });
   $(".tab_item").not(":first").hide();

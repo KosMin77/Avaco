@@ -38,6 +38,7 @@
     &__contacts{
         background-image: url(../img/mail.jpg);
         background-position: center;
+        background-size: cover;
         max-width: 100%;
         height: 70vh;
         text-align: center;
@@ -135,6 +136,7 @@
         margin-right: 20px;
         color: white;
         font-size: 28px;
+        cursor: pointer;
     }
     .fa-linkedin-in:hover,
     .fa-facebook-f:hover{

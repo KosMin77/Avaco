@@ -35,6 +35,6 @@ mixin footer(data = {})
                         button.btn.footer__subscribe(type='submit') Subscribe
                         ul.footer__social
                             each item in data.icon
-                                li.footer__social_link: a(href="#")
-                                    i(class=`fab fa-${item}`)
+                                li.footer__social_link: a(href=item.link)
+                                    i(class=`fab fa-${item.text}`)
                     .col-md-2

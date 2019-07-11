@@ -354,13 +354,20 @@ __webpack_require__.r(__webpack_exports__);
  */
 function initBlock() {
   // TODO: add code here
-  $('.product_slider').slick({
-    dots: true,
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: false,
-    infinite: true,
-    speed: 500,
     fade: true,
-    cssEase: 'linear'
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
   });
   $(".tab_item").not(":first").hide();
   $(".wrapper .product__tab").click(function () {

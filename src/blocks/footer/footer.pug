@@ -31,7 +31,7 @@ mixin footer(data = {})
                         .footer__call
                             a(href="tel:+800.123.45.67").call= data.call
                             a(href="tel:+800.123.45.67").number= data.number
-                        input.footer__email(type="search" placeholder="Your mail")
+                        input.footer__email(type="email" placeholder="Your mail")
                         button.btn.footer__subscribe(type='submit') Subscribe
                         ul.footer__social
                             each item in data.icon

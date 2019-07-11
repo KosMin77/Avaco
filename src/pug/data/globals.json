@@ -3,7 +3,7 @@
     "navigation": {
         "title": "./img/logo.png",
         "menu": [
-            {"link": "/index.html", "text": "Home"},
+            {"link": "Avaco/index.html", "text": "Home"},
             {"link": "#woman",       "text": "Woman"},
             {"link": "#man",         "text": "Man"},
             {"link": "#collection",  "text": "Collection"},
@@ -60,7 +60,7 @@
         "like": "TO FAVORITES",
         "social": "SOCIAL NETWORKS",
         "specif": "Specifications",
-        "addInfo": "Additional Information",
+        "addInfo": "Information",
         "review": "Reviews (3)",
         "comment": "3 COMMENTS ON THIS PRODUCT",
         "admin": "admin – October 17, 2018",

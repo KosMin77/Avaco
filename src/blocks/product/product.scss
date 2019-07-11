@@ -199,9 +199,9 @@
 
     .rate, .rating {
     display: none;
-    &:checked ~ label i {
-        color: gold;
-    }
+        &:checked ~ label i {
+            color: gold;
+        }
     }
 
     &__category,
@@ -347,16 +347,16 @@
         margin: 30px 0 15px 50px;
 
     }
-    .product__shop:before {
+    &__shop:before {
         font-family: 'FontAwesome';
-        content:"\f07a";
+        content: "\f07a";
         color: white;
         position: absolute;
-        top: 340px;
-        left: -30px;
+        top: 1280px;
+        left: 90px;
         transition: all 900ms ease;
     }
-    .btn-shop:hover:before {
+    &__shop:before:hover {
         left: 160px;
         color: white;
     }

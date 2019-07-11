@@ -17,7 +17,6 @@ mixin header(data = {})
                         p.header__descr= data.descr
                         button.btn.header__shop(type='submit') Shop Now!
                             i(class="fas.fa-shopping-cart")
-                        button.btn.header__phone(type='submit')
+                        a.header__phone.phone(href="tel:+800.123.45.67")= data.phone
                             i(class="fas.fa-phone-alt")
-                            p.phone= data.phone
                     .col-md-6.col-sm-12

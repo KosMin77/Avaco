@@ -143,9 +143,20 @@
         font-weight: 600;
         letter-spacing: 0.1em;
         line-height: 28px;
-        padding: 18px 40px;
+        padding: 22px 40px;
         outline: none;
         border: 2px solid #161b2b;
+        text-decoration: none;
+    }
+    .phone:hover{
+        box-shadow: 7px 7px 14px -6px rgba(0,0,0,0.54);
+        transition: .3s;
+        }
+    .phone:active {
+        transform: translateY(3px);
+        box-shadow: 7px 7px 14px -6px rgba(0,0,0,0.54);
+        transition: .3s;
+        
     }
     // Bem modifiers
     // TODO: add code

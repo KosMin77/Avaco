@@ -3,7 +3,7 @@
     "navigation": {
         "title": "./img/logo.png",
         "menu": [
-            {"link": "/index.html", "text": "Home"},
+            {"link": "Avaco/index.html", "text": "Home"},
             {"link": "#woman",       "text": "Woman"},
             {"link": "#man",         "text": "Man"},
             {"link": "#collection",  "text": "Collection"},

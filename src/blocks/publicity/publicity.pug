@@ -8,12 +8,13 @@ mixin publicity(data = {})
     .publicity&attributes(attributes)
         .container
             .row
-                .publicity__wrapp
-                    .col-md-6.col-sm-12
-                        h1.publicity__title= data.title
-                        p.publicity__subtitle= data.subtitle
-                        button.btn.publicity__shop(type='submit') Shop Now!
-                        button.btn.publicity__phone(type='submit')
-                            p.phone
-                                | 800.366.40.72
-                    .col-md-6.col-sm-12
+                #collection
+                    .publicity__wrapp
+                        .col-md-6.col-sm-12
+                            h1.publicity__title= data.title
+                            p.publicity__subtitle= data.subtitle
+                            button.btn.publicity__shop(type='submit') Shop Now!
+                            button.btn.publicity__phone(type='submit')
+                                p.phone
+                                    | 800.366.40.72
+                        .col-md-6.col-sm-12

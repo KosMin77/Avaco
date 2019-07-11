@@ -141,7 +141,6 @@ mixin product(data = {})
                                 hr.product__line
                                 h1.product__add-review= data.addReview
                                 form.product__star(action='#')
-                                    p.product__add-rating= data.rating
                                     input#star1.rating(type='radio' name='radio')
                                     label.star(for='star1')
                                         i.fas.fa-star.pointer
@@ -157,15 +156,16 @@ mixin product(data = {})
                                     input#star5.rating(type='radio' name='radio')
                                     label.star(for='star5')
                                         i.fas.fa-star.pointer
+                                    p.product__add-rating= data.rating
+                                .contacts
+                                    label.product__add-comment(for='area')= data.your
+                                    textarea#area.product__area
+        
+                                    label.product__add-name(for='name')= data.name
+                                    input#name(type="text", name="")
 
-                                label.product__add-comment(for='area')= data.your
-                                textarea#area.product__area
-                                
-                                label.product__add-name(for='name')= data.name
-                                input#name(type="text", name="")
-
-                                label.product__add-email(for='email')= data.email
-                                input#email(type="email", name="")
-                                button.btn.product__shop(type='submit') Shop Now!
+                                    label.product__add-email(for='email')= data.email
+                                    input#email(type="email", name="")
+                                    button.btn.product__shop(type='submit') Shop Now!
                                         
                         

@@ -24,7 +24,7 @@
                         <button class="btn menu-trigger" type="submit">MENU</button>
                         <ul class="navigation__list">
                             <li>
-                                <a class="navigation__links" href="./index.html">Home</a>
+                                <a class="navigation__links" href="#home">Home</a>
                             </li>
                             <li>
                                 <a class="navigation__links" href="#woman">Woman</a>
@@ -39,7 +39,7 @@
                                 <a class="navigation__links" href="#sale">Sale</a>
                             </li>
                             <li>
-                                <a class="navigation__links" href="#contacts">Contacts</a>
+                                <a class="navigation__links" href="#footer">Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -86,19 +86,19 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="product_slider">
                         <div class="product_slide">
-                            <img src="../img/red.jpg" alt="alt" />
+                            <img src="./img/red.jpg" alt="alt" />
                         </div>
                         <div class="product_slide">
-                            <img src="../img/red2.jpg" alt="alt" />
+                            <img src="./img/red2.jpg" alt="alt" />
                         </div>
                         <div class="product_slide">
-                            <img src="../img/red3.jpg" alt="alt" />
+                            <img src="./img/red3.jpg" alt="alt" />
                         </div>
                         <div class="product_slide">
-                            <img src="../img/red4.jpg" alt="alt" />
+                            <img src="./img/red4.jpg" alt="alt" />
                         </div>
                         <div class="product_slide">
-                            <img src="../img/red5.jpg" alt="alt" />
+                            <img src="./img/red5.jpg" alt="alt" />
                         </div>
                     </div>
                 </div>
@@ -237,7 +237,6 @@
                                 <hr class="product__line" />
                                 <h1 class="product__add-review">ADD A REVIEW</h1>
                                 <form class="product__star" action="#">
-                                    <p class="product__add-rating">Your rating: </p>
                                     <input class="rating" id="star1" type="radio" name="radio" />
                                     <label class="star" for="star1"><i class="fas fa-star pointer"></i></label>
                                     <input class="rating" id="star2" type="radio" name="radio" />
@@ -248,14 +247,17 @@
                                     <label class="star" for="star4"><i class="fas fa-star pointer"></i></label>
                                     <input class="rating" id="star5" type="radio" name="radio" />
                                     <label class="star" for="star5"><i class="fas fa-star pointer"></i></label>
+                                    <p class="product__add-rating">Your rating: </p>
                                 </form>
-                                <label class="product__add-comment" for="area">Your comment *</label>
-                                <textarea class="product__area" id="area"></textarea>
-                                <label class="product__add-name" for="name">Name *</label>
-                                <input id="name" type="text" name="" />
-                                <label class="product__add-email" for="email">Email*</label>
-                                <input id="email" type="email" name="" />
-                                <button class="btn product__shop" type="submit">Shop Now!</button>
+                                <div class="contacts">
+                                    <label class="product__add-comment" for="area">Your comment *</label>
+                                    <textarea class="product__area" id="area"></textarea>
+                                    <label class="product__add-name" for="name">Name *</label>
+                                    <input id="name" type="text" name="" />
+                                    <label class="product__add-email" for="email">Email*</label>
+                                    <input id="email" type="email" name="" />
+                                    <button class="btn product__shop" type="submit">Shop Now!</button>
+                                </div>
                             </section>
                         </div>
                     </div>
@@ -308,59 +310,62 @@
             </div>
         </div>
     </div>
+    <div id="sale"></div>
     <div class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 footer_block_wrapp">
-                    <h3 class="footer_chapter">Fast Delifery</h3>
-                    <p class="footer_descr">Hot offer click and go to the link</p>
-                </div>
-                <div class="col-md-3 col-sm-3 footer_block_wrapp">
-                    <h3 class="footer_chapter">Best Prices</h3>
-                    <p class="footer_descr">Hot offer click and go to the link</p>
-                </div>
-                <div class="col-md-3 col-sm-3 footer_block_wrapp">
-                    <h3 class="footer_chapter">Large Assortment</h3>
-                    <p class="footer_descr">Hot offer click and go to the link</p>
-                </div>
-                <div class="col-md-3 col-sm-3 footer_block_wrapp">
-                    <h3 class="footer_chapter">Favorable Discounts</h3>
-                    <p class="footer_descr">Hot offer click and go to the link</p>
+        <div id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 footer_block_wrapp">
+                        <h3 class="footer_chapter">Fast Delifery</h3>
+                        <p class="footer_descr">Hot offer click and go to the link</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 footer_block_wrapp">
+                        <h3 class="footer_chapter">Best Prices</h3>
+                        <p class="footer_descr">Hot offer click and go to the link</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 footer_block_wrapp">
+                        <h3 class="footer_chapter">Large Assortment</h3>
+                        <p class="footer_descr">Hot offer click and go to the link</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 footer_block_wrapp">
+                        <h3 class="footer_chapter">Favorable Discounts</h3>
+                        <p class="footer_descr">Hot offer click and go to the link</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container"></div>
-        <div class="footer__contacts">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 col-sm-12">
-                    <h1 class="footer__title">Avako</h1>
-                    <p class="footer__subtitle">For all questions please contact us by mail for all questions for all questions<br>please contact there this all us by mail for</p>
-                    <div class="footer__call">
-                        <a class="call" href="tel:+800.123.45.67">Call 24/7:</a>
-                        <a class="number" href="tel:+800.123.45.67"> 800.123.45.67</a>
+            <div class="container"></div>
+            <div class="footer__contacts">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 col-sm-12">
+                        <h1 class="footer__title">Avako</h1>
+                        <p class="footer__subtitle">For all questions please contact us by mail for all questions for all questions<br>please contact there this all us by mail for</p>
+                        <div class="footer__call">
+                            <a class="call" href="tel:+800.123.45.67">Call 24/7:</a>
+                            <a class="number" href="tel:+800.123.45.67"> 800.123.45.67</a>
+                        </div>
+                        <input class="footer__email" type="search" placeholder="Your mail" />
+                        <button class="btn footer__subscribe" type="submit">Subscribe</button>
+                        <ul class="footer__social">
+                            <li class="footer__social_link">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="footer__social_link">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="footer__social_link">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="footer__social_link">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="footer__social_link">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
                     </div>
-                    <input class="footer__email" type="search" placeholder="Your mail" />
-                    <button class="btn footer__subscribe" type="submit">Subscribe</button>
-                    <ul class="footer__social">
-                        <li class="footer__social_link">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="footer__social_link">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="footer__social_link">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li class="footer__social_link">
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </li>
-                        <li class="footer__social_link">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                    </ul>
+                    <div class="col-md-2"></div>
                 </div>
-                <div class="col-md-2"></div>
             </div>
         </div>
     </div>

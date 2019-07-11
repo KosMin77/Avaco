@@ -48,7 +48,8 @@
                 width: 200px;
             }
             &__tabs {
-                margin-left: -25px;
+                width: 380px;
+                margin-left: -30px;
                 background-color: lightgray;
             }
             &__tabs-name{
@@ -75,7 +76,7 @@
                 margin-left: -50px;
             }
             &__star {
-                margin-left: -60px;
+                width: 350px;
                 display: flex;
             }
             &__shop {
@@ -84,20 +85,18 @@
                 padding: 10px 25px;
                 border-radius: 12px;
                 margin-right: 20px;
-                margin-left: 110px;
+                margin-left: 90px;
             }   
-            &__add-rating{
-                margin-right: 20px;
-                margin-left: 60px;
+            .contacts {
+                width: 120px;
             }
-
             #area{
                 height: 200px;
-                width: 325px;
+                width: 120px !important;;
                 font-size: 16px;
                 padding-left: 10px;
                 margin-bottom: 20px;
-                margin-left: -80px;
+                margin-left: 0 !important;
             }
 
 
@@ -170,7 +169,7 @@
         font-size: 28px;
     }
 
-    &__stars, &__stars {
+    &__stars, &__star {
         margin-left: -51px;
         width: 436px;
         font-size: 18px;
@@ -291,18 +290,16 @@
 
     &__add-review {
         font-size: 24px;
-        margin-left: 50px;
+        margin-left: 0px;
         margin-top: 20px;
         margin-bottom: 10px;
     }
     &__add-name, &__add-email, &__add-comment {
         font-size: 14px;
-        margin-left: 50px;
     }
     &__add-rating {
         font-size: 18px;
         letter-spacing: 0.1em;
-        margin-left: 45px;
         margin-bottom: 20px;
     }
 
@@ -324,7 +321,6 @@
         height: 200px;
         width: 600px;
         font-size: 16px;
-        margin-left: 50px;
         padding-left: 10px;
         margin-bottom: 20px;
     }
@@ -333,7 +329,6 @@
         width: 600px;
         height: 40px;
         padding-left: 10px;
-        margin-left: 50px;
         margin-bottom: 20px;
     }
     
@@ -349,15 +344,13 @@
         border: 1px solid black;
         outline: none;
         padding: 20px 45px;
-        margin-left: 50px;
-        margin-top: 30px;
-        overflow: hidden;
+        margin: 30px 0 15px 50px;
 
     }
-    .btn-shop:before {
+    .product__shop:before {
         font-family: 'FontAwesome';
         content:"\f07a";
-        color: transparent;
+        color: white;
         position: absolute;
         top: 340px;
         left: -30px;

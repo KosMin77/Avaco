@@ -3,12 +3,12 @@
     "navigation": {
         "title": "./img/logo.png",
         "menu": [
-            {"link": "./index.html", "text": "Home"},
+            {"link": "#home", "text": "Home"},
             {"link": "#woman",       "text": "Woman"},
             {"link": "#man",         "text": "Man"},
             {"link": "#collection",  "text": "Collection"},
             {"link": "#sale",        "text": "Sale"},
-            {"link": "#contacts",    "text": "Contacts"}
+            {"link": "#footer",    "text": "Contacts"}
         ],
         "icons": [
             "search",
@@ -71,11 +71,11 @@
         "name": "Name *",
         "email": "Email*",   
         "slider": [
-            "../img/red.jpg",
-            "../img/red2.jpg",
-            "../img/red3.jpg",
-            "../img/red4.jpg",
-            "../img/red5.jpg"
+            "./img/red.jpg",
+            "./img/red2.jpg",
+            "./img/red3.jpg",
+            "./img/red4.jpg",
+            "./img/red5.jpg"
         ],
         "breadcrumb": [
             "HOME",

@@ -8,7 +8,7 @@
 
     // @media queries
     // TODO: add code
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         .choice {
             &__panel {
                 margin-bottom: 25px;

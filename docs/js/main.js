@@ -233,11 +233,16 @@ function initBlock() {
       duration: 700,
       easing: "swing"
     });
+
+    if (window.innerWidth < 768) {
+      $('.navigation__menu ul').slideToggle(500);
+    }
+
     return false;
   });
   $(document).ready(function () {
     $('.menu-trigger').click(function () {
-      $(' .navigation__menu ul').slideToggle(500);
+      $('.navigation__menu ul').slideToggle(500);
     }); //end slide toggle
 
     $(window).resize(function () {

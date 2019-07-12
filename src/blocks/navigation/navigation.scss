@@ -39,19 +39,24 @@
             position: fixed;
             top: 12px;
             text-align: center;
-            left: 140px;
+            left: 130px;
         }
         &__menu{
            width: 50%;
         }
         &__menu ul li {
           display:block;
-          border-top:1px #79896D solid;    
+          border-top:1px #79896D solid;
+          
+        }
+        &__links {
+            text-align: center;
+            margin-right: 10px !important;
         }
         &__menu ul {
           display:none;
           width: 100%;
-          top: 65px;
+          top: 77px;
         }
         &__list{
             position: fixed;

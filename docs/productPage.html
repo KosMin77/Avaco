@@ -267,15 +267,15 @@
                                 <label class="star" for="star5"><i class="fas fa-star pointer"></i></label>
                                 <p class="product__add-rating">Your rating: </p>
                             </form>
-                            <div class="contacts">
+                            <form class="contacts" action="#" method="GET">
                                 <label class="product__add-comment" for="area">Your comment *</label>
                                 <textarea class="product__area" id="area"></textarea>
                                 <label class="product__add-name" for="name">Name *</label>
-                                <input id="name" type="text" name="" />
+                                <input id="name" type="text" name="" required="required" />
                                 <label class="product__add-email" for="email">Email*</label>
-                                <input id="email" type="email" name="" />
+                                <input id="email" type="email" name="" required="required" />
                                 <button class="btn product__shop" type="submit">Shop Now!</button>
-                            </div>
+                            </form>
                         </section>
                     </div>
                 </div>
@@ -361,8 +361,10 @@
                             <a class="call" href="tel:+800.123.45.67">Call 24/7:</a>
                             <a class="number" href="tel:+800.123.45.67"> 800.123.45.67</a>
                         </div>
-                        <input class="footer__email" type="email" placeholder="Your mail" />
-                        <button class="btn footer__subscribe" type="submit">Subscribe</button>
+                        <form action="#" method="GET">
+                            <input class="footer__email" type="email" placeholder="Your mail" required="required" />
+                            <button class="btn footer__subscribe" type="submit">Subscribe</button>
+                        </form>
                         <ul class="footer__social">
                             <li class="footer__social_link">
                                 <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>

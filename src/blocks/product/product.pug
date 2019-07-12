@@ -161,14 +161,14 @@ mixin product(data = {})
                                 label.star(for='star5')
                                     i.fas.fa-star.pointer
                                 p.product__add-rating= data.rating
-                            .contacts
+                            form(action="#" method="GET").contacts
                                 label.product__add-comment(for='area')= data.your
                                 textarea#area.product__area
     
                                 label.product__add-name(for='name')= data.name
-                                input#name(type="text", name="")
+                                input#name(type="text", name="" required)
 
                                 label.product__add-email(for='email')= data.email
-                                input#email(type="email", name="")
+                                input#email(type="email", name="" required)
                                 button.btn.product__shop(type='submit') Shop Now!
                                     

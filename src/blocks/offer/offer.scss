@@ -49,7 +49,7 @@
         display: inline;
         overflow: hidden;
     }
-
+    
     .slick-list{
         padding: 0 !important;
     }
@@ -60,11 +60,17 @@
         button {
             margin-left: 15px;
             border-radius: 50%;
+            height: 15px;
+            width: 15px;
             border: none;
             outline: none;
             background-color: lightblue;
             color: transparent;
         }
+        .slick-active > button {
+            background-color: red;
+        }
+
         button:focus {
             background-color: lightcoral;
             color: transparent;

@@ -58,10 +58,14 @@
             &__tabs-name{
                 width: 100px;
                 margin-right: -14px;
-                margin-left: 0px;
+                margin-left: -5px;
+                
             }
             &__comment-title {
                 font-size: 18px;
+                width: 100%;
+                margin-left: 25px;
+                margin-bottom: 30px;
             }
             &__admin-pic {
                 margin-left: 5px;
@@ -103,7 +107,9 @@
                 margin-bottom: 20px;
                 margin-left: 0 !important;
             }
-
+            &__line {
+                width: 100%;
+            }
 
             
 
@@ -126,6 +132,9 @@
     }
     &__line {
         display: none;
+    }
+    .slick-slide {
+        padding: 0 3px !important;
     }
 
     &__nav {
@@ -362,17 +371,17 @@
     &__shop:before {
         font-family: 'Font Awesome 5 free';
         content: "\f07a";
-        color: white;
+        color: transparent;
         position: absolute;
-        top: 1280px;
-        left: 90px;
+        top: 1253px;
+        left: 0;
         transition: all 900ms ease;
     }
-    &__shop:before:hover {
-        left: 160px;
+    .product__shop:hover:before {
+        left: 210px;
         color: white;
+        transform: translateY(3px)
     }
-
 
     // Bem modifiers
     // TODO: add code
